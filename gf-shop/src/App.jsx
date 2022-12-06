@@ -5,6 +5,11 @@ import { useState,useEffect } from 'react';
 import Login from "./component/Login.jsx"
 import Footer from './component/Footer.jsx';
 import NavBar from './component/NavBar.jsx';
+<<<<<<< HEAD
+import Phones from './component/Phones.jsx';
+import Clothes from "./component/Clothes.jsx"
+import Signup from "./component/Signup.jsx"
+=======
 
 import Phones from './component/phones.jsx';
 import Clothes from "./component/clothes.jsx"
@@ -12,6 +17,7 @@ import Home from './component/Home.jsx';
 
 
 
+>>>>>>> fbb8a2fed86061dfae72ed856dce5471fb058f72
 import RealEstate from './component/RealEstate.jsx';
 import axios from "axios";
 import Vehicle from './component/Vehicle.jsx'
@@ -53,6 +59,7 @@ function App() {
  <Route path='/vehicle' element={< Vehicle vehicle={vehicle}/>}/>
  <Route path='/realEstate' element={< RealEstate realEstate={realEstate}/>}/>
  <Route path='/clothes' element={< Clothes clothes={clothes}/>}/>
+ <Route path='/signup' element={< Signup />}/>
  
    </Route>
  </Routes>
