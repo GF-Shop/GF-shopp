@@ -5,8 +5,12 @@ import { useState,useEffect } from 'react';
 import Login from "./component/Login.jsx"
 import Footer from './component/Footer.jsx';
 import NavBar from './component/NavBar.jsx';
-import Phones from './component/Phones.jsx';
-import Clothes from "./component/Clothes.jsx"
+
+import Phones from './component/phones.jsx';
+import Clothes from "./component/clothes.jsx"
+import Home from './component/Home.jsx';
+
+
 
 import RealEstate from './component/RealEstate.jsx';
 import axios from "axios";
@@ -40,10 +44,10 @@ function App() {
 
   return (
     <div className="App">
-    <NavBar/>  
+    <NavBar />  
  <Routes>
    <Route>
-     
+   <Route path='/home' element={< Home />}/>
  <Route path='/phones' element={< Phones phones={phones} />}/>
  <Route path='/login' element={< Login />}/>
  <Route path='/vehicle' element={< Vehicle vehicle={vehicle}/>}/>
