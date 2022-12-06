@@ -6,8 +6,8 @@ import Login from "./component/Login.jsx"
 import Footer from './component/Footer.jsx';
 import NavBar from './component/NavBar.jsx';
 
-import Phones from './component/phones.jsx';
-import Clothes from "./component/clothes.jsx"
+import Phones from './component/Phones.jsx';
+import Clothes from "./component/Clothes.jsx"
 import Home from './component/Home.jsx';
 
 
