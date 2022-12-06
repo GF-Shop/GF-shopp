@@ -7,7 +7,7 @@ import Footer from './component/Footer.jsx';
 import NavBar from './component/NavBar.jsx';
 import Phones from './component/Phones.jsx';
 import Clothes from "./component/Clothes.jsx"
-
+import Signup from "./component/Signup.jsx"
 import RealEstate from './component/RealEstate.jsx';
 import axios from "axios";
 import Vehicle from './component/Vehicle.jsx'
@@ -49,6 +49,7 @@ function App() {
  <Route path='/vehicle' element={< Vehicle vehicle={vehicle}/>}/>
  <Route path='/realEstate' element={< RealEstate realEstate={realEstate}/>}/>
  <Route path='/clothes' element={< Clothes clothes={clothes}/>}/>
+ <Route path='/signup' element={< Signup />}/>
  
    </Route>
  </Routes>
