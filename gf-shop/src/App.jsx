@@ -7,6 +7,8 @@ import Footer from './component/footer.jsx';
 import NavBar from './component/NavBar.jsx';
 import Phones from './component/phones.jsx';
 import Clothes from "./component/clothes.jsx"
+import Home from './component/Home.jsx';
+
 
 import RealEstate from './component/realEstate.jsx';
 import axios from "axios";
@@ -40,10 +42,10 @@ function App() {
 
   return (
     <div className="App">
-    <NavBar/>  
+    <NavBar />  
  <Routes>
    <Route>
-     
+   <Route path='/home' element={< Home />}/>
  <Route path='/phones' element={< Phones phones={phones} />}/>
  <Route path='/login' element={< Login />}/>
  <Route path='/vehicle' element={< Vehicle vehicle={vehicle}/>}/>
