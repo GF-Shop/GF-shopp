@@ -3,7 +3,7 @@ import "./Signup.css";
 import axios from 'axios';
 const SignUp = () => {
   const [username,setUsername]=useState('')
-  const [email,setEmail]=useState('')
+  const [phone,setPhone]=useState('')
   const [password, setPassword] = useState("");
   const [passwordagain, setPasswordagain] = useState("");
 
@@ -60,13 +60,13 @@ axios.post("http://localhost:3000/user/signup",body).then((res)=>{
 
                     <div className="form-outline mb-4">
                       <label className="form-label" htmlFor="form3Example3cg">
-                        Your Email
+                        Your Phone Number
                       </label>
                       <input
                         onChange={(e) => {
-                          handleChanges(e, setEmail);
+                          handleChanges(e, setPhone);
                         }}
-                        type="email"
+                        type="Number"
                         id="form3Example3cg"
                         className="form-control form-control-lg"
                       />
@@ -120,7 +120,7 @@ axios.post("http://localhost:3000/user/signup",body).then((res)=>{
 
                     <div className="d-flex justify-content-center">
                       <button
-                      onClick={()=>{SignUp({username,email,password,passwordagain})}}
+                      onClick={()=>{SignUp({username,phone,password,passwordagain})}}
                         type="button"
                         className="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
                       >

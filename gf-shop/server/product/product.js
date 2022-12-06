@@ -20,6 +20,9 @@ var productSchema=mongoose.Schema({
 
  var userSchema=mongoose.Schema({
     User:{type:String,required:true},
+Phonenumber:{
+    type:Number,required:true
+},
     password:{type:String,required:true}
 
  })
