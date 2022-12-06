@@ -1,16 +1,19 @@
 import './App.css';
 import React from 'react';
 import { useState,useEffect } from 'react';
+import AddProduct from './component/AddProduct.jsx';
 import Login from "./component/Login.jsx"
 import Footer from './component/Footer.jsx';
 import NavBar from './component/NavBar.jsx';
 
-
 import Phones from './component/Phones.jsx';
 import Clothes from "./component/Clothes.jsx"
 import Home from './component/Home.jsx';
+import Signup from "./component/Signup.jsx"
+
 
 import Signup from "./component/Signup.jsx"
+
 
 import RealEstate from './component/RealEstate.jsx';
 import axios from "axios";
@@ -53,6 +56,7 @@ function App() {
  <Route path='/vehicle' element={< Vehicle vehicle={vehicle}/>}/>
  <Route path='/realEstate' element={< RealEstate realEstate={realEstate}/>}/>
  <Route path='/clothes' element={< Clothes clothes={clothes}/>}/>
+ <Route path='/add' element={< AddProduct />}/>
  <Route path='/signup' element={< Signup />}/>
  
    </Route>
