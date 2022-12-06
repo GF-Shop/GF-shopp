@@ -2,15 +2,15 @@
 import './App.css';
 import React from 'react';
 import { useState,useEffect } from 'react';
-import Login from "./component/login.jsx"
-import Footer from './component/footer.jsx';
+import Login from "./component/Login.jsx"
+import Footer from './component/Footer.jsx';
 import NavBar from './component/NavBar.jsx';
-import Phones from './component/phones.jsx';
-import Clothes from "./component/clothes.jsx"
+import Phones from './component/Phones.jsx';
+import Clothes from "./component/Clothes.jsx"
 
-import RealEstate from './component/realEstate.jsx';
+import RealEstate from './component/RealEstate.jsx';
 import axios from "axios";
-import Vehicle from './component/vehicle.jsx'
+import Vehicle from './component/Vehicle.jsx'
 import {Routes,Route} from "react-router-dom"
 function App() {
 
