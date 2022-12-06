@@ -1,11 +1,12 @@
 import React from 'react'
 
 import 'bootstrap/dist/css/bootstrap.min.css';  
-import {Nav, Navbar, Container, NavDropdown} from 'react-bootstrap';
 
+import {Nav, Navbar, Container, NavDropdown} from 'react-bootstrap';
 
 const NavBar = () => {
   return (
+
     <div>
 <header class="header">
 
@@ -46,6 +47,7 @@ const NavBar = () => {
     </nav>
 
 </div>
+
 
 </div>
   )
