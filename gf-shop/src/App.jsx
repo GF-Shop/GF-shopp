@@ -43,12 +43,12 @@ function App() {
     <NavBar/>  
  <Routes>
    <Route>
- 
- <Route path='/phones' element={<Phones phones={phones} />}/>
- <Route path='/login' element={<Login />}/>
- <Route path='/vehicle' element={<Vehicle vehicle={vehicle}/>}/>
- <Route path='/realEstate' element={<RealEstate realEstate={realEstate}/>}/>
- <Route path='/clothes' element={<Clothes clothes={clothes}/>}/>
+     
+ <Route path='/phones' element={< Phones phones={phones} />}/>
+ <Route path='/login' element={< Login />}/>
+ <Route path='/vehicle' element={< Vehicle vehicle={vehicle}/>}/>
+ <Route path='/realEstate' element={< RealEstate realEstate={realEstate}/>}/>
+ <Route path='/clothes' element={< Clothes clothes={clothes}/>}/>
  
    </Route>
  </Routes>
