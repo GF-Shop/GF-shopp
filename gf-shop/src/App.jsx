@@ -3,14 +3,14 @@ import './App.css';
 import React from 'react';
 import { useState,useEffect } from 'react';
 import Login from "./component/login.jsx"
-import Footer from './components/footer.jsx';
-import NavBar from './components/navBar.jsx';
-import Phones from './components/phones.jsx';
+import Footer from './component/footer.jsx';
+import NavBar from './component/NavBar.jsx';
+import Phones from './component/phones.jsx';
 import Clothes from "./component/clothes.jsx"
 
-import RealEstate from './components/realEstate.jsx';
+import RealEstate from './component/realEstate.jsx';
 import axios from "axios";
-import Vehicle from './components/vehicle.jsx'
+import Vehicle from './component/vehicle.jsx'
 import {Routes,Route} from "react-router-dom"
 function App() {
 
@@ -44,12 +44,12 @@ function App() {
     <NavBar/>  
  <Routes>
    <Route>
- 
- <Route path='/phones' element={<Phones phones={phones} />}/>
- <Route path='/login' element={<Login />}/>
- <Route path='/vehicle' element={<Vehicle vehicle={vehicle}/>}/>
- <Route path='/realEstate' element={<RealEstate realEstate={realEstate}/>}/>
- <Route path='/clothes' element={<Clothes clothes={clothes}/>}/>
+     
+ <Route path='/phones' element={< Phones phones={phones} />}/>
+ <Route path='/login' element={< Login />}/>
+ <Route path='/vehicle' element={< Vehicle vehicle={vehicle}/>}/>
+ <Route path='/realEstate' element={< RealEstate realEstate={realEstate}/>}/>
+ <Route path='/clothes' element={< Clothes clothes={clothes}/>}/>
  
    </Route>
  </Routes>
