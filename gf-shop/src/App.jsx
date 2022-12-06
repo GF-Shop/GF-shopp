@@ -1,11 +1,60 @@
 
 import './App.css';
 import React from 'react';
+import { useState,useEffect } from 'react';
+import Login from "./component/login.jsx"
+import Footer from './components/footer.jsx';
+import NavBar from './components/navBar.jsx';
+import Phones from './components/phones.jsx';
+import Clothes from "./component/clothes.jsx"
+
+import RealEstate from './components/realEstate.jsx';
+import axios from "axios";
+import Vehicle from './components/vehicle.jsx'
+import {Routes,Route} from "react-router-dom"
 function App() {
+
+  const [data,setData]=useState([])
+  const [phones,setPhones]=useState([])
+  const [clothes,setClothes]=useState([])
+  const [realEstate,setRealEstate]=useState([])
+
+  const [vehicle,setVehicle]=useState([])
+  console.log(data);
+  console.log(phones);
+  console.log(vehicle);
+    useEffect(()=>{
+      axios.get("http://localhost:5000/prod/prod").then(async res=>{
+        
+       await setData(res.data)
+    
+      await setPhones(res.data.filter((element)=>{return element.Category==="phone"}))
+      await setVehicle(res.data.filter((element)=>{return element.Category==="vehicle"}))
+      await setClothes(res.data.filter((element)=>{return element.Category==="clothes"}))
+      await setRealEstate(res.data.filter((element)=>{return element.Category==="real estate"}))
+
+
+    })
+    },[])
+  
+
   return (
     <div className="App">
-      hello
-          </div>
+    
+    <NavBar/>  
+ <Routes>
+   <Route>
+ 
+ <Route path='/phones' element={<Phones phones={phones} />}/>
+ <Route path='/login' element={<Login />}/>
+ <Route path='/vehicle' element={<Vehicle vehicle={vehicle}/>}/>
+ <Route path='/realEstate' element={<RealEstate realEstate={realEstate}/>}/>
+ <Route path='/clothes' element={<Clothes clothes={clothes}/>}/>
+ 
+   </Route>
+ </Routes>
+     < Footer/>
+         </div>
   );
 }
 
