@@ -6,13 +6,13 @@ mongoose.Promise = global.Promise;
 
 // TODO: Complete the pokemonSchema below.
 var productSchema=mongoose.Schema({
-    User:{type:String,required:true},
-    Phonenumber:{type:Number,required:true},
-    Product:{type:String,unique:true,required:true},
-    Category:{type:String,required:true},
+    User:{type:String},
+    Phonenumber:{type:Number},
+    Product:{type:String,unique:true},
+    Category:{type:String},
     Description:[String],
     ImageUrl:{type:String},
-    Price:{type:String,required:true},
+    Price:{type:Number,required:true},
     
 
 })
