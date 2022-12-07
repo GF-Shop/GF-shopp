@@ -2,6 +2,9 @@ import React from 'react'
 import "./home.css"
 const Home = () => {
   return (
+    <body>
+        
+   
     <div><section class="banner">
 
     <div class="box-container">
@@ -154,6 +157,7 @@ const Home = () => {
 
 </section>
 </div>
+</body>
   )
 }
 
