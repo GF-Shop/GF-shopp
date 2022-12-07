@@ -85,7 +85,9 @@ section {
   max-height: 10%;
 }
 
-  
+.remise {
+  image-resolution: 10dpi
+  }
   
 .header {
   position: -webkit-sticky;

@@ -12,7 +12,7 @@ import Home from './component/Home.jsx';
 import Signup from "./component/Signup.jsx"
 
 
-import Signup from "./component/Signup.jsx"
+
 
 
 import RealEstate from './component/RealEstate.jsx';
