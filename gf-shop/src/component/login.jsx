@@ -48,7 +48,7 @@ const Login = () => {
                       />
                       <h4
                         className="mt-1 ps-5 mb-5 pb-1"
-                        style={{ color: "Green" }}
+                        style={{ color: "#198754" }}
                       >
                         Welcome to Green Field Shop
                       </h4>
@@ -123,7 +123,7 @@ const Login = () => {
                 <div className="col-lg-6 d-flex align-items-center gradient-custom-2">
                   <div className="text-white px-3 py-4 p-md-5 mx-md-4">
                     
-                    <h4 className="mb-4" style={{ color: "Black" ,fontFamily:"initial" }}>
+                    <h4 className="mb-4" style={{ color: "White" ,fontFamily:"",fontSize:"50px" }}>
                       Life is easy with G.F.S 
                     </h4>
                     <p className="small mb-0" style={{ color: "#715561" }}>
