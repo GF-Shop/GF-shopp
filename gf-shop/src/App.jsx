@@ -15,7 +15,7 @@ import RealEstate from "./component/RealEstate.jsx";
 
 import axios from "axios";
 import Vehicle from "./component/Vehicle.jsx";
-import { CDBFooter } from 'cdbreact';
+
 import { Routes, Route } from "react-router-dom";
 function App() {
   const [data, setData] = useState([]);
