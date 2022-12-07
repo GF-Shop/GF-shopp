@@ -1,3 +1,4 @@
+
 import "./App.css";
 import React from "react";
 import { useState, useEffect } from "react";
@@ -11,6 +12,7 @@ import Clothes from "./component/Clothes.jsx";
 import Home from "./component/Home.jsx";
 import Signup from "./component/Signup.jsx";
 import RealEstate from "./component/RealEstate.jsx";
+
 import axios from "axios";
 import Vehicle from "./component/Vehicle.jsx";
 import { CDBFooter } from 'cdbreact';
