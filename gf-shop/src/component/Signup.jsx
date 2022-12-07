@@ -30,7 +30,8 @@ axios.post("http://localhost:3000/user/signup",body).then((res)=>{
       className="vh-100 bg-image"
       style={{
         backgroundImage:
-          "url('https://res.cloudinary.com/duqxezt6m/image/upload/v1670271803/Capture_d_%C3%A9cran_2022-12-05_211952-removebg-preview_w0lxlt.png')",
+          "url('https://img.freepik.com/vecteurs-libre/fond-blanc-gris-minimal-lignes-ondulees_1017-25099.jpg?w=2000')",
+          
       }}
     >
       <div className="mask d-flex align-items-center h-100 gradient-custom-3">
