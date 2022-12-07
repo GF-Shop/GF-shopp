@@ -5,7 +5,7 @@ const Home = () => {
     <body>
         
    
-    <div><section class="banner">
+    <div><section class="banner" >
 
     <div class="box-container">
 
@@ -28,11 +28,15 @@ const Home = () => {
 
     <h1 class="heading"> Our <span>Categories</span> </h1>
 
-    <div class="box-container">
+    <div hr class="box-container">
 
-        <div class="box">
+        <div class="box" onClick={() => {
+                            console.log("cliked");
+                            window.location.href = "/phones";
+                          }} > 
+        
             <div class="image">
-                <img src="https://res.cloudinary.com/drd0uckic/image/upload/v1670406878/iu4vm34czonmlo9iioz2.jpg" class="main-img" alt=""/>
+                <img  src="https://res.cloudinary.com/drd0uckic/image/upload/v1670406878/iu4vm34czonmlo9iioz2.jpg" class="main-img" alt=""/>
                 <img src="https://res.cloudinary.com/drd0uckic/image/upload/v1670406878/ubua1eu9sclgtr8lcrdm.jpg" class="hover-img" alt=""/>
             </div>
             <div class="content">
@@ -48,7 +52,10 @@ const Home = () => {
             </div>
         </div>
 
-        <div class="box">
+        <div class="box" onClick={() => {
+                            console.log("cliked");
+                            window.location.href = "/vehicle";
+                          }}>
             <div class="image">
                 <img src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,h_304,w_304/v1670407499/sl8vlhp3jqvshxtrlieh.jpg" class="main-img" alt=""/>
                 <img src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,w_304/v1670407499/c4zaascyiyfuztew1jmo.jpg" class="hover-img" alt=""/>
@@ -65,8 +72,11 @@ const Home = () => {
                 </div>
             </div>
         </div>
-
-        <div class="box">
+ 
+        <div class="box" onClick={() => {
+                            console.log("cliked");
+                            window.location.href = "/clothes";
+                          }}>
             <div class="image">
                 <img src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,w_404/v1670408759/tkzlijk8r7nuupliwsyc.png" class="main-img" alt=""/>
                 <img src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,h_404,w_404/v1670409287/yewua6c7v7jmqita0dba.png" class="hover-img" alt=""/>
@@ -84,7 +94,10 @@ const Home = () => {
             </div>
         </div>
 
-        <div class="box">
+        <div class="box" onClick={() => {
+                            console.log("cliked");
+                            window.location.href = "/realEstate";
+                          }}>
             <div class="image">
                 <img src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,h_404,w_404/v1670409641/liuqppy6gji9txmjqyaf.png" class="main-img" alt=""/>
                 <img src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,h_404,w_404/v1670409641/x6fxfwzsu9aertrujbug.png" class="hover-img" alt=""/>
