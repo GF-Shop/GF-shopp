@@ -31,8 +31,7 @@ const Footer = () => {
 <section class="credit">
 
     <p> created by <span>A.W.A</span> | all rights reserved! </p>
-
-    <img src="images/card_img.png" alt=""/>
+<img src="https://res.cloudinary.com/drd0uckic/image/upload/v1670420455/qcdauudpnadpxituim1b.png" alt=""/>
 
 </section>
 </footer>
