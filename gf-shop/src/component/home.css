@@ -81,13 +81,13 @@ section {
   }
 }
 .logoo{
-  max-width: 10%;
-  max-height: 10%;
+  max-width: 8%;
+  max-height: 8%;
+  
+  
 }
 
-.remise {
-  image-resolution: 10dpi
-  }
+
   
 .header {
   position: -webkit-sticky;
@@ -110,16 +110,17 @@ section {
 }
 
 .header .logo {
+  
   font-size: 2.5rem;
   color: #fff;
   font-weight: bolder;
+  
 }
 
-.header .logo i {
-  color: gold;
-}
+
 
 .header .search-form {
+ 
   border-radius: 5rem;
   height: 5rem;
   width: 50rem;
@@ -131,37 +132,48 @@ section {
       -ms-flex-align: center;
           align-items: center;
   background: #fff;
+  margin-right: 50rem;
 }
 
 .header .search-form input {
+  
   width: 100%;
   padding-right: 1rem;
   font-size: 1.7rem;
   text-transform: none;
   color: #666;
+  
+  
+  
 }
 
 .header .search-form label {
   font-size: 2rem;
-  color: #666;
+  color: #198754;
   cursor: pointer;
+  margin-left: 3rem;
+  
 }
 
 .header .search-form label:hover {
   color: #0984e3;
+ 
 }
 
 .header .icons a,
 .header .icons div {
   font-size: 2.5rem;
-  margin-left: 2rem;
+  margin-left: 5rem;
   color: #fff;
   cursor: pointer;
+
+  
 }
 
 .header .icons a:hover,
 .header .icons div:hover {
-  color: gold;
+  color: rgb(234, 230, 207);
+  
 }
 
 #search-btn {
@@ -1149,7 +1161,7 @@ section {
 }
 
 .credit p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #666;
 }
 
@@ -1158,7 +1170,7 @@ section {
 }
 
 .credit img {
-  height: 4rem;
+ 
   -webkit-filter: drop-shadow(0 0 0.1rem #333);
           filter: drop-shadow(0 0 0.1rem #333);
 }
