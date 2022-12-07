@@ -22,7 +22,6 @@ function App() {
   const [phones, setPhones] = useState([]);
   const [clothes, setClothes] = useState([]);
   const [realEstate, setRealEstate] = useState([]);
-
   const [vehicle, setVehicle] = useState([]);
   console.log(data);
   console.log(phones);

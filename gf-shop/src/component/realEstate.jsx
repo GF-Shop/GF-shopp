@@ -1,6 +1,7 @@
 import React from 'react'
 
-const RealEstate = () => {
+const RealEstate = ({realEstate}) => {
+  console.log(realEstate);
   return (
     <div>realEstate</div>
   )

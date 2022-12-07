@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Vehicle = () => {
+const Vehicle = ({vehicle}) => {
+  console.log(vehicle);
   return (
     <div>vehicle</div>
   )

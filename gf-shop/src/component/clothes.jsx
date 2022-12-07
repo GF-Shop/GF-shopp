@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Clothes = () => {
+const Clothes = ({clothes}) => {
+  console.log(clothes);
   return (
     <div>clothes</div>
   )
