@@ -1,6 +1,13 @@
 .App {
   text-align: center;
 }
+
+.addd{
+  text-align: center;
+}
+
+   
+
 .header{
 position: fixed;
 }
@@ -9,8 +16,9 @@ body{
 
 }
 .footer{
-    position: ;
+    position: absolute;
     margin-top: 0px;
+
     bottom: 0px;
     height: 30px;
     width: 100%;
