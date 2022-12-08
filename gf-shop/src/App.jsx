@@ -84,7 +84,7 @@ function App() {
 
       <Routes>
         <Route>
-          <Route path="/home" element={<Home filtred={filtred}/>} />
+          <Route path="" element={<Home filtred={filtred}/>} />
           <Route path="/phones" element={<Phones phones={phones} />} />
           <Route path="/login" element={<Login />} />
           <Route path="/vehicle" element={<Vehicle vehicle={vehicle} />} />

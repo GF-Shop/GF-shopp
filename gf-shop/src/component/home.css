@@ -1155,12 +1155,12 @@ section {
 }
 
 .credit p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: #666;
 }
 
 .credit p span {
-  color: #0984e3;
+  color: #198754;
 }
 
 .credit img {
@@ -1177,7 +1177,7 @@ section {
     padding: 2rem;
   }
   section {
-    padding: 3rem 2rem;
+    padding: 1rem 1rem;
   }
 }
 

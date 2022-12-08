@@ -73,8 +73,8 @@ const AddProduct = () => {
                 <div className="form-group">
 
 <b>Select From Categories</b>
-                <select name="rental-option" className="form-control" onChange={(event)=> setCategories(event.target.value)}>
-  <option className="addd" value="test"  >---⬇️---</option>
+                <select  name="rental-option" className="form-control" onChange={(event)=> setCategories(event.target.value)}>
+  <option className="addd" value="test"   >---⬇️⬇️⬇️---</option>
 
   <option value="phone"> phone </option>
   <option value="vehicle"> vehicle </option>
@@ -87,10 +87,10 @@ const AddProduct = () => {
                 </div>
                 <div className="form-group">
                 <b htmlFor="comment">Product Description:</b>
-                <textarea class="form-control" rows="5" id="productdesc" useRef="productdesc" onChange={(event)=>setDescription(event.target.value)}></textarea>
+                <textarea class="form-control" rows="5" id="productdesc" useRef="productdesc" onChange={(event)=>setDescription(event.target.value)} placeholder="enter Description" ></textarea>
                 </div>
                 
-                <button  class="button-54" role="button"  onClick={()=>{
+                <button  class="button-77" role="button"  onClick={()=>{
                 
                 
                   
