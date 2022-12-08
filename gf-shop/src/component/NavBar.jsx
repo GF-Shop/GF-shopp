@@ -14,7 +14,7 @@ const NavBar = ({searchBar}) => {
     <Navbar bg="success" variant="success">
       <Container>
         
-        <Navbar.Brand style={{fontSize:"35px",color:"white"}} className='' href="home">
+        <Navbar.Brand style={{fontSize:"35px",color:"white"}} className='' href="/">
           <img
             alt=""
             src="https://res.cloudinary.com/duqxezt6m/image/upload/v1670271803/Capture_d_écran_2022-12-05_211952-removebg-preview_w0lxlt.png"
@@ -45,7 +45,7 @@ const NavBar = ({searchBar}) => {
       </Container>
       <Container>
 
-        <Nav.Link href="home" title='home'  style={{fontSize:"35px",color:"white"}} ><img  src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,h_30,w_30/v1670503386/ko2xsiobi3tjplihsyny.png"></img></Nav.Link>
+        <Nav.Link href="/" title='home'  style={{fontSize:"35px",color:"white"}} ><img  src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,h_30,w_30/v1670503386/ko2xsiobi3tjplihsyny.png"></img></Nav.Link>
 
             <Nav.Link href="help" title='help' style={{fontSize:"35px",color:"white"}} ><i class="fa fa-info-circle" aria-hidden="true"></i></Nav.Link>
             <Nav.Link href="add" title='add product' style={{fontSize:"35px",color:"white"}}><i class="fa fa-plus" aria-hidden="true"></i></Nav.Link>

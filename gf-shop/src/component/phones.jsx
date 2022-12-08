@@ -1,7 +1,9 @@
 import React from 'react'
+import { useState, useEffect } from "react";
 
 const Phones = ({phones}) => {
- ;
+ 
+
   return (<div class="grid-container ">
     {phones.map((e,i)=>{
        return(
