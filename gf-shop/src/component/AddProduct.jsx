@@ -21,7 +21,7 @@ const AddProduct = () => {
                 </div>
                 <div className="form-group">
                 <label htmlFor="comment">Product Description:</label>
-                <textarea class="form-control" rows="5" id="productdesc" useRef="productdesc"></textarea>
+                <textarea className="form-control" rows="5" id="productdesc" useRef="productdesc"></textarea>
                 </div>
                 <button type="submit" className="btn btn-primary" >Submit</button>
             </form>
