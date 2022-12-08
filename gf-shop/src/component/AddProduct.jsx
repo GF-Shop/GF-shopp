@@ -92,12 +92,7 @@ const AddProduct = () => {
                 
                 <button  class="button-54" role="button"  onClick={()=>{
                 
-<<<<<<< HEAD
-                    
-                   
-=======
                 
->>>>>>> f29ba4adef15effc7da9cbeb2bf856753aad3dfd
                   
                    Add({ImageUrl,Product,Price,Description,Category,Phonenumber})
                    window.location.href = "/home";
