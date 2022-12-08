@@ -1,6 +1,7 @@
 body{
 
     background: #d1d5db;
+    
 }
 
 
@@ -13,24 +14,16 @@ body{
 .form .fa-search{
 
     position: absolute;
-    top:18px;
+    top:15px;
     left: 17px;
     color: #2b2c2d;
 
 }
 
-.form span{
 
-        position: absolute;
-    right: 17px;
-    top: 13px;
-    padding: 2px;
-    
-
-}
 
 .left-pan{
-    padding-left: 7px;
+    padding-left: 8px;
 }
 
 .left-pan i{

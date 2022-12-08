@@ -12,12 +12,12 @@ import Clothes from "./component/Clothes.jsx";
 import Home from "./component/Home.jsx";
 import Signup from "./component/Signup.jsx";
 import RealEstate from "./component/RealEstate.jsx";
-
 import axios from "axios";
 import Vehicle from "./component/Vehicle.jsx";
-
 import { Routes, Route } from "react-router-dom";
+
 import ProductCard from "./component/ProductCard";
+
 function App() {
   const [data, setData] = useState([]);
   const [filtred, setFiltred] = useState([]);
@@ -28,11 +28,6 @@ function App() {
   const [vehicle, setVehicle] = useState([]);
   console.log(data);
   console.log(filtred);
-
-  // console.log(phones);
-  // console.log(vehicle);
-  // console.log(realEstate);
-  // console.log(clothes);
   useEffect(() => {
     axios.get("http://localhost:5000/prod/prod").then(async (res) => {
       await setData(res.data);
@@ -85,7 +80,7 @@ function App() {
 
       <Routes>
         <Route>
-          <Route path="/home" element={<Home filtred={filtred}/>} />
+          <Route path="" element={<Home filtred={filtred}/>} />
           <Route path="/phones" element={<Phones phones={phones} />} />
           <Route path="/login" element={<Login />} />
           <Route path="/vehicle" element={<Vehicle vehicle={vehicle} />} />

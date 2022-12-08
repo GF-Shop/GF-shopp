@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.footer {
+  clear: both;
+  position: relative;
+  height: 50px;
+  margin-top: 80px;
+}
