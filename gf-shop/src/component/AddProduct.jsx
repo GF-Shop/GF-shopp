@@ -15,7 +15,13 @@ const AddProduct = () => {
   const [Description,setDescription]=useState("")
   const [Category,setCategories]=useState("")
   const [Phonenumber,setPhone]=useState(0)
-  
+  console.log(Product);
+
+  console.log(Price);
+  console.log(Description);
+  console.log(Category);
+  console.log(Phonenumber);
+
   const Add=(add) =>{
     axios.post(`http://localhost:5000/prod/prod`,add)
   }
@@ -58,7 +64,7 @@ const AddProduct = () => {
                 </div>
                 <div className="form-group">
                 <b>Phone Number</b>
-                <input type="text" className="form-control" id="productname" placeholder="Enter your Phone Number" useRef="productname"  onChange={(event)=>setPhone(event.target.value)}/>
+                <input type="text" className="form-control" id="productname" placeholder="Enter your Phone Number" useRef="productname"  onChange={(event)=> setPhone(event.target.value)}/>
                 </div>
                 <div className="form-group">
                 <b>PRICE</b>
@@ -95,7 +101,7 @@ const AddProduct = () => {
                 
                   
                    Add({ImageUrl,Product,Price,Description,Category,Phonenumber})
-                   window.location.href = "/home";
+                   window.location.href = "/";
                   
                   }}> sumbit</button>
                  
