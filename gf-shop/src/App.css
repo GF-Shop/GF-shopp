@@ -1,11 +1,24 @@
 .App {
   text-align: center;
 }
+
 .addd{
   text-align: center;
 }
+
+   
+
+.header{
+position: fixed;
+}
+body{
+ background-image:"https://img.freepik.com/photos-premium/arriere-plan-flou-noir-blanc-flou-bureau-fond-clair-bokeh_7190-2287.jpg?w=2000" 
+
+}
 .footer{
     position: absolute;
+    margin-top: 0px;
+
     bottom: 0px;
     height: 30px;
     width: 100%;
@@ -60,6 +73,7 @@
 
 .home {
   background: #fff;
+  
 }
 .remise{
   width: 10%;

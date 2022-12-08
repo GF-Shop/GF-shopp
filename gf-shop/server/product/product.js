@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 const db = require('../db/index.js');
 mongoose.Promise = global.Promise;
 
-// TODO: Complete the pokemonSchema below.
+// we create the  schema of the product 
 var productSchema=mongoose.Schema({
     User:{type:String},
     Phonenumber:{type:Number},
@@ -17,7 +17,7 @@ var productSchema=mongoose.Schema({
 
 })
 
-
+//we create the schema of the user  
  var userSchema=mongoose.Schema({
     User:{type:String,required:true},
 Phonenumber:{
@@ -28,7 +28,7 @@ Phonenumber:{
  })
 
  
-// TODO: Register the pokemonSchema with Mongoose as the 'Pokemon' collection.
+
 var Product=mongoose.model("product",productSchema);
  var Users=mongoose.model('User',userSchema)
 

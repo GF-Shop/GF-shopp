@@ -2,14 +2,14 @@ import React from 'react'
 import "./home.css"
 const Home = () => {
   return (
-    <body>
+    <>
         
    
     <div><section class="banner" >
 
     <div class="box-container">
 
-        <a href="https://www.google.com/search?q=world+cup+result&sxsrf=ALiCzsbTN-RyAv6uEtIBCmW_ClNTDicgMQ%3A1670405787558&ei=m16QY67XIbaBi-gP5r6zmAQ&ved=0ahUKEwjukOS8muf7AhW2wAIHHWbfDEMQ4dUDCA8&uact=5&oq=world+cup+result&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIQCAAQgAQQsQMQgwEQRhD9ATILCAAQgAQQsQMQgwEyCAgAEIAEEMsBMggIABCABBDLATIICAAQgAQQywEyCAgAEIAEEMsBMggIABCABBDLATIICAAQgAQQywEyCAgAEIAEEMsBMggIABCABBDLAToKCAAQRxDWBBCwAzoHCAAQsAMQQzoKCAAQsQMQgwEQQzoECAAQQzoFCAAQgAQ6BQguEIAEOhAIABCABBCHAhCxAxCDARAUSgQIQRgASgQIRhgAUIYEWKwOYJcPaAFwAHgAgAFxiAGmBZIBAzUuMpgBAKABAcgBCsABAQ&sclient=gws-wiz-serp#sie=lg;/m/0fp_8fm;2;/m/030q7;mt;fp;1;;;" class="box">
+        <a href="http://res.cloudinary.com/duqxezt6m/image/upload/c_scale,h_700,w_1900/v1670273152/1200x0_rz1gn1.jpg" class="box">
             <img  src="http://res.cloudinary.com/duqxezt6m/image/upload/c_scale,h_600,w_1900/v1670273152/1200x0_rz1gn1.jpg" alt="greenfieldshop" />
             <div class="content">
                 
@@ -122,7 +122,7 @@ const Home = () => {
 
 </section>
 </div>
-</body>
+</>
   )
 }
 
