@@ -18,10 +18,10 @@ const NavBar = ({searchBar}) => {
           <img
             alt=""
             src="https://res.cloudinary.com/duqxezt6m/image/upload/v1670271803/Capture_d_écran_2022-12-05_211952-removebg-preview_w0lxlt.png"
-            width="70"
-            height="60"
+            width="80"
+            height="50"
             className="d-inline-block align-top"
-          />{'Green Field Store '}
+          />{''}
           
         </Navbar.Brand>
         <div class="container">
@@ -45,10 +45,11 @@ const NavBar = ({searchBar}) => {
       </Container>
       <Container>
 
-        <Nav.Link href="/" title='home'  style={{fontSize:"35px",color:"white"}} ><img  src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,h_30,w_30/v1670503386/ko2xsiobi3tjplihsyny.png"></img></Nav.Link>
+        <Nav.Link href="/" title='home'  style={{fontSize:"35px",color:"white"}} ><img  src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,w_38/v1670510023/b11itd9covkktj30nnut.png"></img></Nav.Link>
 
-            <Nav.Link href="help" title='help' style={{fontSize:"35px",color:"white"}} ><i class="fa fa-info-circle" aria-hidden="true"></i></Nav.Link>
-            <Nav.Link href="add" title='add product' style={{fontSize:"35px",color:"white"}}><i class="fa fa-plus" aria-hidden="true"></i></Nav.Link>
+
+            <Nav.Link href="help" title='help' style={{fontSize:"35px",color:"white"}} ><img src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,w_38/v1670512244/th95h6nnv6j1jtrgljvy.png"></img></Nav.Link>
+            <Nav.Link href="add" title='add product' style={{fontSize:"35px",color:"white"}}><img src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,w_38/v1670510017/yclxc3kkbe2gdrbllji0.png"></img></Nav.Link>
       </Container>
     </Navbar>
   </>
