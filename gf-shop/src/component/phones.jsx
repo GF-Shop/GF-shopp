@@ -1,8 +1,9 @@
 import React from 'react'
 import { useState, useEffect } from "react";
-
+// import ProductCard from './ProductCard.jsx';
 const Phones = ({phones}) => {
  
+
 
   return (<div class="grid-container ">
     {phones.map((e,i)=>{
@@ -21,9 +22,11 @@ const Phones = ({phones}) => {
     
   </ul>
   <div class="card-body">
-    <a href="#" class="card-link">more details</a>
+    <a href="#" class="card-link" >more details</a>
     
-  </div><div></div>
+  </div><div>
+  
+  </div>
 </div>
   )})}
   </div>)

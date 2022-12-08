@@ -80,7 +80,7 @@ function App() {
 
       <Routes>
         <Route>
-          <Route path="" element={<Home filtred={filtred}/>} />
+          <Route path="" element={<Home filtred={filtred} data={data}/>} />
           <Route path="/phones" element={<Phones phones={phones} />} />
           <Route path="/login" element={<Login />} />
           <Route path="/vehicle" element={<Vehicle vehicle={vehicle} />} />
@@ -89,7 +89,7 @@ function App() {
           <Route path="/add" element={<AddProduct />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/help" element={<Help />} />
-          <Route path="/productcard" element={<ProductCard/>} />
+          <Route path="/productcard" element={<ProductCard />} />
 
         </Route>
       </Routes>
