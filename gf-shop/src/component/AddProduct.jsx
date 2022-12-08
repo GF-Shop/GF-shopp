@@ -33,7 +33,7 @@ const AddProduct = () => {
     method:"post",
     body:form
     })
-   
+    .then((res)=>res.json())
     .then((res)=>{setImage(res.url)
      console.log(res.url)})
     .catch((err)=>{console.log(err);})
@@ -67,10 +67,8 @@ const AddProduct = () => {
                 <div className="form-group">
                 <b htmlFor="image" >Product Image: </b>
                 <input  class="inputfile"  type="file"   onChange={(event)=>setFile(event.target.files[0])}  />
-                <button  className="btn btn-primary"   class="button-4 " onClick={()=>{
-                
-                uploadd()
-                }} > <b> upload Img </b></button>
+                <button  className="btn btn-primary"   class="button-4 " onClick={
+                uploadd} > <b> upload Img </b></button>
                 </div>
                 <div className="form-group">
 <b>Select From Categories</b>
@@ -91,7 +89,7 @@ const AddProduct = () => {
                 
                 <button  class="button-54" role="button"  onClick={()=>{
                 
-                    uploadd()
+                    
                    
                   
                    Add({ImageUrl,Product,Price,Description,Category,Phonenumber})
