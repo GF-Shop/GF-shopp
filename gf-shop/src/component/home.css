@@ -9,8 +9,9 @@
   outline: none;
   border: none;
   text-transform: capitalize;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+  font-size: 16px;
+
+  
 }
 
 html {
@@ -32,7 +33,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-  background: #eee;
+ background-image:"https://img.freepik.com/photos-premium/arriere-plan-flou-noir-blanc-flou-bureau-fond-clair-bokeh_7190-2287.jpg?w=2000" 
 }
 
 section {
