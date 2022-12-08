@@ -33,7 +33,9 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
- background-image:"https://img.freepik.com/photos-premium/arriere-plan-flou-noir-blanc-flou-bureau-fond-clair-bokeh_7190-2287.jpg?w=2000" 
+ background-image:"https://img.freepik.com/photos-premium/arriere-plan-flou-noir-blanc-flou-bureau-fond-clair-bokeh_7190-2287.jpg?w=2000" ;
+ background-size:cover;
+ background-repeat: no-repeat
 }
 
 section {
@@ -48,6 +50,7 @@ section {
 }
 
 .heading span {
+  font-size: larger;
   color: #198754;
 }
 
@@ -66,13 +69,13 @@ section {
   background: #333;
 }
 
-@-webkit-keyframes fadeIn {
+/* @-webkit-keyframes fadeIn {
   0% {
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
     opacity: 0;
   }
-}
+} */
 
 @keyframes fadeIn {
   0% {
@@ -336,16 +339,12 @@ section {
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-.banner .box-container .box:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
+
 
 .banner .box-container .box img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+
 }
 
 .banner .box-container .box .content {
@@ -1110,7 +1109,7 @@ section {
       -ms-flex-align: center;
           align-items: center;
   gap: 2rem;
-  background: #333;
+  background: #198754;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1123,9 +1122,7 @@ section {
   font-weight: bolder;
 }
 
-.quick-links .logo i {
-  color: gold;
-}
+
 
 .quick-links .links a {
   margin: 0 1rem;
@@ -1133,9 +1130,7 @@ section {
   color: #fff;
 }
 
-.quick-links .links a:hover {
-  color: gold;
-}
+
 
 .quick-links .share a {
   font-size: 2.5rem;
@@ -1143,9 +1138,7 @@ section {
   margin-left: 2rem;
 }
 
-.quick-links .share a:hover {
-  color: gold;
-}
+
 
 .credit {
   display: -webkit-box;
