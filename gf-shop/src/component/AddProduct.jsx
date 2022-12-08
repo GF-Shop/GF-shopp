@@ -78,10 +78,10 @@ const AddProduct = () => {
                 <select name="rental-option" className="form-control" onChange={(event)=> setCategories(event.target.value)}>
   <option className="addd" value="test"  >---⬇️---</option>
 
-  <option value="Phones"> Phones </option>
-  <option value="Vehicle"> Vehicle </option>
-  <option value="Clothes"> Clothes </option>
-  <option value="RealEstate"> RealEstate </option>
+  <option value="phone"> phone </option>
+  <option value="vehicle"> vehicle </option>
+  <option value="clothes"> clothes </option>
+  <option value="real estate"> real estate </option>
 
 </select>
 
@@ -98,7 +98,7 @@ const AddProduct = () => {
                    
                   
                    Add({ImageUrl,Product,Price,Description,Category,Phonenumber})
-                  
+                   window.location.href = "/home";
                   
                   }}> sumbit</button>
                  
