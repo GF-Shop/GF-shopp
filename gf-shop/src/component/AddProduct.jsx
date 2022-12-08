@@ -73,6 +73,7 @@ const AddProduct = () => {
                 }} > <b> upload Img </b></button>
                 </div>
                 <div className="form-group">
+
 <b>Select From Categories</b>
                 <select name="rental-option" className="form-control" onChange={(event)=> setCategories(event.target.value)}>
   <option className="addd" value="test"  >---⬇️---</option>
@@ -83,6 +84,8 @@ const AddProduct = () => {
   <option value="RealEstate"> RealEstate </option>
 
 </select>
+
+
                 </div>
                 <div className="form-group">
                 <b htmlFor="comment">Product Description:</b>

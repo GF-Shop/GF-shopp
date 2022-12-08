@@ -54,7 +54,13 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+  
+  <body style={{ 
+    backgroundImage: `url("https://img.freepik.com/photos-premium/arriere-plan-flou-noir-blanc-flou-bureau-fond-clair-bokeh_7190-2287.jpg?w=2000")` 
+  }}>
+    
+  
+    <div className="App" >
       <NavBar />
       <Routes>
         <Route>
@@ -72,6 +78,7 @@ function App() {
       </Routes>
       <Footer />
     </div>
+    </body>
   );
 }
 
