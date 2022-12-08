@@ -27,13 +27,13 @@ const AddProduct = () => {
    
     const form = new FormData()
     form.append('file',file)
-    form.append("upload_preset","walidslim")
-    form.append("cloud_name","drd0uckic")
-    fetch(" https://api.cloudinary.com/v1_1/drd0uckic/image/upload ",{
+    form.append("upload_preset","abderahimt")
+    form.append("cloud_name","dqz0n291c")
+    fetch(" https://api.cloudinary.com/v1_1/dqz0n291c/image/upload ",{
     method:"post",
     body:form
     })
-   
+    .then((res)=>res.json())
     .then((res)=>{setImage(res.url)
      console.log(res.url)})
     .catch((err)=>{console.log(err);})
@@ -94,8 +94,7 @@ const AddProduct = () => {
                 
                 <button  class="button-54" role="button"  onClick={()=>{
                 
-                    uploadd()
-                   
+                
                   
                    Add({ImageUrl,Product,Price,Description,Category,Phonenumber})
                    window.location.href = "/home";
