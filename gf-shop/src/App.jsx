@@ -17,6 +17,7 @@ import axios from "axios";
 import Vehicle from "./component/Vehicle.jsx";
 
 import { Routes, Route } from "react-router-dom";
+import ProductCard from "./component/ProductCard";
 function App() {
   const [data, setData] = useState([]);
   const [filtred, setFiltred] = useState([]);
@@ -93,6 +94,7 @@ function App() {
           <Route path="/add" element={<AddProduct />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/help" element={<Help />} />
+          <Route path="/productcard" element={<ProductCard/>} />
 
         </Route>
       </Routes>
