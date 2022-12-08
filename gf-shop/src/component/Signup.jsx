@@ -19,7 +19,7 @@ cb(e.target.value)
       JSON.stringify(body.password) === JSON.stringify(body.passwordagain) &&
       body.password.length >= 8
     ) {
-axios.post("http://localhost:3000/user/signup",body).then((res)=>{
+axios.post("http://localhost:5000/prod/user/signup",body).then((res)=>{
   console.log(res);
 }).catch(err=>console.log(err))
     }
@@ -121,7 +121,7 @@ axios.post("http://localhost:3000/user/signup",body).then((res)=>{
 
                     <div className="d-flex justify-content-center">
                       <button
-                      onClick={()=>{SignUp({username,phone,password,passwordagain})}}
+                      onClick={()=>{SignUp({User:username,Phonenumber:phone,password,passwordagain})}}
                         type="button"
                         className="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
                       >

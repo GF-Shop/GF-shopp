@@ -15,12 +15,12 @@ const Login = () => {
   const Login = async (body, event) => {
   
     await axios
-      .post("http://localhost:3000/user/login", body)
+      .post("http://localhost:5000/prod/user/login", body)
       .then(async (res) => {
         
         await setResult(res.data);
         if(result.user){
-          localStorage.setItem('token',result.user)
+          await localStorage.setItem('token',result.user)
           window.location.href='/home'
         }
       });
@@ -90,7 +90,7 @@ const Login = () => {
                       <div className="text-center pt-1 mb-5 pb-1">
                         <button
                         onClick={()=>{
-                          Login({username,password})
+                          Login({User:username,password})
                         }}
                           className="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
                           type="button"

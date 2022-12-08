@@ -27,13 +27,13 @@ const AddProduct = () => {
    
     const form = new FormData()
     form.append('file',file)
-    form.append("upload_preset","walidslim")
-    form.append("cloud_name","drd0uckic")
-    fetch(" https://api.cloudinary.com/v1_1/drd0uckic/image/upload ",{
+    form.append("upload_preset","abderahimt")
+    form.append("cloud_name","dqz0n291c")
+    fetch(" https://api.cloudinary.com/v1_1/dqz0n291c/image/upload ",{
     method:"post",
     body:form
     })
-   
+    .then((res)=>res.json())
     .then((res)=>{setImage(res.url)
      console.log(res.url)})
     .catch((err)=>{console.log(err);})
@@ -78,10 +78,10 @@ const AddProduct = () => {
                 <select name="rental-option" className="form-control" onChange={(event)=> setCategories(event.target.value)}>
   <option className="addd" value="test"  >---⬇️---</option>
 
-  <option value="Phones"> Phones </option>
-  <option value="Vehicle"> Vehicle </option>
-  <option value="Clothes"> Clothes </option>
-  <option value="RealEstate"> RealEstate </option>
+  <option value="phone"> phone </option>
+  <option value="vehicle"> vehicle </option>
+  <option value="clothes"> clothes </option>
+  <option value="real estate"> real estate </option>
 
 </select>
 
@@ -94,11 +94,10 @@ const AddProduct = () => {
                 
                 <button  class="button-54" role="button"  onClick={()=>{
                 
-                    uploadd()
-                   
+                
                   
                    Add({ImageUrl,Product,Price,Description,Category,Phonenumber})
-                  
+                   window.location.href = "/home";
                   
                   }}> sumbit</button>
                  

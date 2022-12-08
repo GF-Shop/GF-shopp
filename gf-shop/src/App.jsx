@@ -26,6 +26,8 @@ function App() {
   console.log(data);
   console.log(phones);
   console.log(vehicle);
+  console.log(realEstate);
+  console.log(clothes);
   useEffect(() => {
     axios.get("http://localhost:5000/prod/prod").then(async (res) => {
       await setData(res.data);
@@ -55,13 +57,14 @@ function App() {
 
   return (
   
-  <body style={{ 
-    backgroundImage: `url("https://img.freepik.com/photos-premium/arriere-plan-flou-noir-blanc-flou-bureau-fond-clair-bokeh_7190-2287.jpg?w=2000")` 
-  }}>
+  
     
   
     <div className="App" >
       <NavBar />
+      <body style={{ 
+    backgroundImage: `url("https://img.freepik.com/photos-premium/arriere-plan-flou-noir-blanc-flou-bureau-fond-clair-bokeh_7190-2287.jpg?w=2000")` 
+  }}>
       <Routes>
         <Route>
           <Route path="/home" element={<Home />} />
@@ -76,9 +79,10 @@ function App() {
 
         </Route>
       </Routes>
+      </body>
       <Footer />
     </div>
-    </body>
+    
   );
 }
 
