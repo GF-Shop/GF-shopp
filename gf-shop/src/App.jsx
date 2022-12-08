@@ -26,6 +26,8 @@ function App() {
   console.log(data);
   console.log(phones);
   console.log(vehicle);
+  console.log(realEstate);
+  console.log(clothes);
   useEffect(() => {
     axios.get("http://localhost:5000/prod/prod").then(async (res) => {
       await setData(res.data);
