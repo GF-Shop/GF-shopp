@@ -14,8 +14,8 @@ exports.signup= async (req, res) => {
 	try {
 		const newPassword = await bcrypt.hash(req.body.password, 10)
 		await Users.create({
-			User: req.body.name,
-			
+			User: req.body.User,
+			Phonenumber:req.body.Phonenumber,
 			password: newPassword,
 		})
 		res.json({ status: 'ok' })
@@ -25,7 +25,7 @@ exports.signup= async (req, res) => {
 }
 exports.login=async (req, res) => {
 	const user = await Users.findOne({
-		User: req.body.name,
+		User: req.body.User,
 	})
 
 	if (!user) {
