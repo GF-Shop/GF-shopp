@@ -67,10 +67,8 @@ const AddProduct = () => {
                 <div className="form-group">
                 <b htmlFor="image" >Product Image: </b>
                 <input  class="inputfile"  type="file"   onChange={(event)=>setFile(event.target.files[0])}  />
-                <button  className="btn btn-primary"   class="button-4 " onClick={()=>{
-                
-                uploadd()
-                }} > <b> upload Img </b></button>
+                <button  className="btn btn-primary"   class="button-4 " onClick={
+                uploadd} > <b> upload Img </b></button>
                 </div>
                 <div className="form-group">
 

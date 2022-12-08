@@ -19,15 +19,19 @@ import Vehicle from "./component/Vehicle.jsx";
 import { Routes, Route } from "react-router-dom";
 function App() {
   const [data, setData] = useState([]);
+  const [filtred, setFiltred] = useState([]);
+
   const [phones, setPhones] = useState([]);
   const [clothes, setClothes] = useState([]);
   const [realEstate, setRealEstate] = useState([]);
   const [vehicle, setVehicle] = useState([]);
   console.log(data);
-  console.log(phones);
-  console.log(vehicle);
-  console.log(realEstate);
-  console.log(clothes);
+  console.log(filtred);
+
+  // console.log(phones);
+  // console.log(vehicle);
+  // console.log(realEstate);
+  // console.log(clothes);
   useEffect(() => {
     axios.get("http://localhost:5000/prod/prod").then(async (res) => {
       await setData(res.data);
@@ -55,22 +59,32 @@ function App() {
     });
   }, []);
 
+  const searchBar= (prod)=>{  
+    setFiltred(data.filter((e)=>e.Product.includes(prod)))
+  }
+
   return (
   
   
     
   
 
+    
+      
+      
+
     <div className="App"  >
       <body className="main" style={{ 
+
     backgroundImage: `url("https://img.freepik.com/photos-premium/arriere-plan-flou-noir-blanc-flou-bureau-fond-clair-bokeh_7190-2287.jpg?w=2000")` 
 
   }}>
-      <NavBar />
+  <NavBar searchBar={searchBar} />
+     
 
       <Routes>
         <Route>
-          <Route path="/home" element={<Home />} />
+          <Route path="/home" element={<Home filtred={filtred}/>} />
           <Route path="/phones" element={<Phones phones={phones} />} />
           <Route path="/login" element={<Login />} />
           <Route path="/vehicle" element={<Vehicle vehicle={vehicle} />} />
