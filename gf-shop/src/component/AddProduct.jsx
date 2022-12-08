@@ -53,8 +53,8 @@ const AddProduct = () => {
               <b className="heading">ADD PRODUCT </b>
               
                 <div className="form-group">
-                <b>Product Nime</b>
-                <input  type="text" className="form-control" id="productname" placeholder="Enter Product Name" useRef="productname"  onChange= {(event)=>setProduct(event.target.value)} />
+                <b>Product Name</b>
+                <input  type="text" className="form-control"  id="productname" placeholder="Enter Product Name" useRef="productname"  onChange= {(event)=>setProduct(event.target.value)} />
                 </div>
                 <div className="form-group">
                 <b>Phone Number</b>

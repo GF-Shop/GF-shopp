@@ -5,27 +5,35 @@
 .addd{
   text-align: center;
 }
-
+.form-control{
+height: 50px
+}
    
 
 .header{
 position: fixed;
 }
 body{
- background-image:"https://img.freepik.com/photos-premium/arriere-plan-flou-noir-blanc-flou-bureau-fond-clair-bokeh_7190-2287.jpg?w=2000" 
+ background-image:"https://img.freepik.com/photos-premium/arriere-plan-flou-noir-blanc-flou-bureau-fond-clair-bokeh_7190-2287.jpg?w=2000" ;
 
 }
 .footer{
-    position: absolute;
-    margin-top: 0px;
+    
+    position: relative;
+
+
+  
+    height: 0%;
+
+
+    width: 100%;
 
     bottom: 0px;
-    height: 0%;
-    width: 100%;
+  
 }
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto ;
+  grid-template-columns: auto auto auto auto auto auto ;
 
 }   
 .grid-item {
