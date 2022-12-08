@@ -1,9 +1,8 @@
 import React from 'react'
 
 const Phones = ({phones}) => {
- 
+ ;
   return (<div class="grid-container ">
-
     {phones.map((e,i)=>{
        return(
     <div class="card grid-item" style={{width: "18rem"}}>

@@ -44,7 +44,9 @@ const NavBar = ({searchBar}) => {
           </div>
       </Container>
       <Container>
+
         <Nav.Link href="home" title='home'  style={{fontSize:"35px",color:"white"}} ><img  src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,h_30,w_30/v1670503386/ko2xsiobi3tjplihsyny.png"></img></Nav.Link>
+
             <Nav.Link href="help" title='help' style={{fontSize:"35px",color:"white"}} ><i class="fa fa-info-circle" aria-hidden="true"></i></Nav.Link>
             <Nav.Link href="add" title='add product' style={{fontSize:"35px",color:"white"}}><i class="fa fa-plus" aria-hidden="true"></i></Nav.Link>
       </Container>
