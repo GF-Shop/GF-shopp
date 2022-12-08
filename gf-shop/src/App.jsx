@@ -60,11 +60,12 @@ function App() {
   
     
   
-    <div className="App" >
-      <NavBar />
-      <body style={{ 
+    <div className="App"  >
+      <body className="main" style={{ 
     backgroundImage: `url("https://img.freepik.com/photos-premium/arriere-plan-flou-noir-blanc-flou-bureau-fond-clair-bokeh_7190-2287.jpg?w=2000")` 
   }}>
+      <NavBar />
+
       <Routes>
         <Route>
           <Route path="/home" element={<Home />} />
@@ -79,8 +80,8 @@ function App() {
 
         </Route>
       </Routes>
-      </body>
-      <Footer />
+     
+      <Footer /> </body>
     </div>
     
   );
