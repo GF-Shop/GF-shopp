@@ -63,7 +63,7 @@ function App() {
     <div className="App" >
       <NavBar />
       <body style={{ 
-    backgroundImage: `url("https://img.freepik.com/photos-premium/arriere-plan-flou-noir-blanc-flou-bureau-fond-clair-bokeh_7190-2287.jpg?w=2000")` 
+    backgroundImage: `url("https://static-cse.canva.com/blob/572626/1.magebyRodionKutsaevviaUnsplash.jpg")` 
   }}>
       <Routes>
         <Route>

@@ -22,7 +22,7 @@ const NavBar = () => {
         
       </Container>
       <Container>
-        <Nav.Link href="home" title='home'  style={{fontSize:"35px",color:"white"}} ><i  class="fa fa-user-circle" aria-hidden="true"></i></Nav.Link>
+        <Nav.Link href="home" title='home'  style={{fontSize:"35px",color:"white"}} ><i  className="fa fa-user-circle" aria-hidden="true"></i></Nav.Link>
             <Nav.Link href="help" title='help' style={{fontSize:"35px",color:"white"}} ><i class="fa fa-info-circle" aria-hidden="true"></i></Nav.Link>
             <Nav.Link href="add" title='add product' style={{fontSize:"35px",color:"white"}}><i class="fa fa-plus" aria-hidden="true"></i></Nav.Link>
       </Container>
