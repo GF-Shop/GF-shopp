@@ -28,7 +28,7 @@ const Home = () => {
 
     <h1 className="heading"> <span> Categories</span> </h1>
 
-    <div hr className="box-container">
+    <div  className="box-container">
 
         <div className="box" onClick={() => {
                             console.log("cliked");
@@ -45,7 +45,7 @@ const Home = () => {
                 <div className="stars">
                     <i className="fas fa-star"></i>
                     <i className="fas fa-star"></i>
-                    <i classNAme="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
                     <i className="fas fa-star"></i>
                     <i className="fas fa-star-half-alt"></i>
                 </div>

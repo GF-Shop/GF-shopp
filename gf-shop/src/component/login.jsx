@@ -19,11 +19,12 @@ const Login = () => {
       .then(async (res) => {
         
         await setResult(res.data);
-        if(result.user){
-          await localStorage.setItem('token',result.user)
-          window.location.href='/home'
+       console.log(res.data,'res.data');
+        if(res.data.user){
+           localStorage.setItem('token',res.data.user)
+           console.log(result.user,'user');
         }
-      });
+      }).catch(err=>console.log(err))
   };
   return (
     <section

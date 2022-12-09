@@ -8,7 +8,7 @@ import "./navbar.css"
 const NavBar = ({searchBar}) => {
 
   const[fil,setFil]=useState("")
-  console.log(fil);
+ 
   return (
     <>
     <Navbar bg="success" variant="success">
@@ -24,15 +24,15 @@ const NavBar = ({searchBar}) => {
           />{''}
           
         </Navbar.Brand>
-        <div class="container">
+        <div className="container">
 
-            <div class="row height d-flex justify-content-center align-items-center">
+            <div className="row height d-flex justify-content-center align-items-center">
 
-              <div class="col-md-6">
+              <div className="col-md-6">
 
-                <div class="form">
-                  <input type="text" class="form-control form-input" placeholder="Search anything..." onChange={(e)=>{setFil(e.target.value)}}/>
-                  <i class="fa fa-search" onClick={()=>{searchBar(fil)}}> </i>
+                <div className="form">
+                  <input type="text" className="form-control form-input" placeholder="Search anything..." onChange={(e)=>{setFil(e.target.value)}}/>
+                  <i className="fa fa-search" onClick={()=>{searchBar(fil)}}> </i>
 
                   
                 </div>

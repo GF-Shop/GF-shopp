@@ -22,8 +22,8 @@ const Help = () => {
       </div>
 
       <h2>Our Team</h2>
-      <div className="row">
-        <div className="column">
+      <div className="">
+        <div className="column"  style={{ width: "100%" }}>
           <div className="card">
             <img
               src="/w3images/team1.jpg"
@@ -40,7 +40,7 @@ const Help = () => {
           </div>
         </div>
 
-        <div className="column">
+        <div className="column"  style={{ width: "100%" }}>
           <div className="card">
             <img src="" alt="" style={{ width: "100%" }} />
             <div className="container">
@@ -53,7 +53,7 @@ const Help = () => {
           </div>
         </div>
 
-        <div className="column">
+        <div className="column"  style={{ width: "100%" }}>
           <div className="card">
             <img
               src="/w3images/team3.jpg"

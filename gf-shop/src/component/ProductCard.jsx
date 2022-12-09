@@ -1,28 +1,32 @@
 import React from 'react'
-import css from "./productcard.css"
+import 
+ "./productcard.css"
 import { useState } from 'react'
 
 
 
   
 
-function ProductCard() {
+function ProductCard({card}) {
+console.log(card);
+// onClick={()=>props.togtog()}
   const [isShown, setIsShown] = useState(false);
     const handleClick = event => {
     setIsShown(current => !current);
   };
   return (
-   <div>
+   <div >
+    
   <div className="card">
-  <img src="https://lawej.com/storage/Tunisie/annonnce/1237/thumb-816x460-2e72c0797638b49452bd6c7e51887bc3.jpeg" alt="Denim Jeans" style={{width:"100%"}}/>
-  <h1>Tailored Jeans</h1>
-  <p className="price">$19.99</p>
-  <p>Some text about the jeans..</p>
+  <img src={card.ImageUrl} alt="Denim Jeans" style={{width:"100%"}}/>
+  <h1>{card.Product}</h1>
+  <p className="price">{card.Price}</p>
+  <p>{card.Description}</p>
   <p><button onClick={handleClick} >📞 contact seller</button></p>
   {isShown && (
         <div>
-            <h1>Aziz Selini</h1>
-          <h2>+216 52 224 782</h2>
+            <h1>{card.User}</h1>
+          <h2>{card.Phonenumber}</h2>
         </div>
       )}
 </div>

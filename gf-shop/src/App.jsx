@@ -15,20 +15,43 @@ import RealEstate from "./component/RealEstate.jsx";
 import axios from "axios";
 import Vehicle from "./component/Vehicle.jsx";
 import { Routes, Route } from "react-router-dom";
-
+import jwt_decode from 'jwt-decode'
 import ProductCard from "./component/ProductCard";
 
 function App() {
   const [data, setData] = useState([]);
   const [filtred, setFiltred] = useState([]);
-
+const [userLoggedIn,setUser]=useState('')
   const [phones, setPhones] = useState([]);
   const [clothes, setClothes] = useState([]);
   const [realEstate, setRealEstate] = useState([]);
   const [vehicle, setVehicle] = useState([]);
+  const [card,setCard]=useState('')
+ console.log(userLoggedIn,'hi');
+  const ChangeCard=async(optin)=>{
+    console.log(optin);
+await setCard(optin)
+  }
   console.log(data);
   console.log(filtred);
   useEffect(() => {
+const token=localStorage.getItem('token')
+console.log(token,'token');
+if(token){
+  const username=jwt_decode(token)
+  console.log(username,'user')
+  if(!username){
+    localStorage.removeItem('token')
+  }
+  else{
+    axios.get(`http://localhost:5000/prod/${username.User}`).then(res=>{
+      console.log(res.data,'res.dataata');
+setUser(res.data)
+    })
+  }
+}
+
+
     axios.get("http://localhost:5000/prod/prod").then(async (res) => {
       await setData(res.data);
 
@@ -81,7 +104,7 @@ function App() {
       <Routes>
         <Route>
           <Route path="" element={<Home filtred={filtred}/>} />
-          <Route path="/phones" element={<Phones phones={phones} />} />
+          <Route path="/phones" element={<Phones phones={phones} ChangeCard={ChangeCard} />} />
           <Route path="/login" element={<Login />} />
           <Route path="/vehicle" element={<Vehicle vehicle={vehicle} />} />
           <Route path="/realEstate"element={<RealEstate realEstate={realEstate} />}/>
@@ -89,7 +112,7 @@ function App() {
           <Route path="/add" element={<AddProduct />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/help" element={<Help />} />
-          <Route path="/productcard" element={<ProductCard/>} />
+          <Route path="/productcard" element={<ProductCard card={card}/>} />
 
         </Route>
       </Routes>
