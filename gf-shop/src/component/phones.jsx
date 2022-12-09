@@ -17,6 +17,7 @@ setShow(she)
   else {
     return (<div class="grid-container ">
     {props.phones.map((e,i)=>{
+
        return(
         
     <div class="card grid-item" style={{width: "18rem"}}>
@@ -33,8 +34,11 @@ setShow(she)
     <a  onClick={()=>{
       setCard(e)
       togtog()}} class="card-link" >more details</a>
+
     
-  </div><div></div>
+  </div><div>
+  
+  </div>
 </div>
   )})}
   </div>) 

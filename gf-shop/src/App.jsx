@@ -105,6 +105,7 @@ setUser(res.data)
         <Route>
           <Route path="" element={<Home filtred={filtred}/>} />
           <Route path="/phones" element={<Phones phones={phones} ChangeCard={ChangeCard} />} />
+
           <Route path="/login" element={<Login />} />
           <Route path="/vehicle" element={<Vehicle vehicle={vehicle} />} />
           <Route path="/realEstate"element={<RealEstate realEstate={realEstate} />}/>
@@ -112,7 +113,9 @@ setUser(res.data)
           <Route path="/add" element={<AddProduct />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/help" element={<Help />} />
+
           <Route path="/productcard" element={<ProductCard card={card}/>} />
+
 
         </Route>
       </Routes>

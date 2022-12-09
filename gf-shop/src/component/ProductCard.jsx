@@ -7,9 +7,11 @@ import { useState } from 'react'
 
   
 
+
 function ProductCard({card}) {
 console.log(card);
 // onClick={()=>props.togtog()}
+
   const [isShown, setIsShown] = useState(false);
     const handleClick = event => {
     setIsShown(current => !current);

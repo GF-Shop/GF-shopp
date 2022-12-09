@@ -1,6 +1,7 @@
 import React from 'react'
 import "./home.css"
-const Home = () => {
+const Home = ({data}) => {
+    console.log(('hello',data));
   return (
     <div className='MainDiv'>
         
@@ -29,6 +30,7 @@ const Home = () => {
     <h1 className="heading"> <span> Categories</span> </h1>
 
     <div  className="box-container">
+
 
         <div className="box" onClick={() => {
                             console.log("cliked");
@@ -114,11 +116,10 @@ const Home = () => {
                 </div>
             </div>
         </div>
+           {/* all product */}
+     
 
-       
-        
-
-    </div>
+</div>
 
 </section>
 </div>
