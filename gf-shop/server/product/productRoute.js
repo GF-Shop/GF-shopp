@@ -8,7 +8,7 @@ productRouter.route('/prod')
 .post(productController.createOne)
 productRouter.route('/user/login').post(productController.login)
 productRouter.route('/user/signup').post(productController.signup)
-
+productRouter.route('/:User').get(productController.retrieveOneUser)
 productRouter.route('/:id')
 .get(productController.retrieveOne)
 .put(productController.updateOne)

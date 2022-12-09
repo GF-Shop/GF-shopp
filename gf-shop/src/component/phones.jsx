@@ -1,12 +1,23 @@
 import React from 'react'
 import { useState, useEffect } from "react";
-// import ProductCard from './ProductCard.jsx';
-const Phones = ({phones}) => {
- 
+import ProductCard from './ProductCard.jsx';
 
+const Phones = (props) => {
+ console.log(props);
+ const[card,setCard]=useState('')
+ const [show,setShow]=useState(false)
+const togtog=()=>{
+let she=!show
+setShow(she)
+}
 
-  return (<div class="grid-container ">
-    {phones.map((e,i)=>{
+  if (show===true) {
+    return <ProductCard togtog={togtog} card={card} />
+  }
+  else {
+    return (<div class="grid-container ">
+    {props.phones.map((e,i)=>{
+
        return(
         
     <div class="card grid-item" style={{width: "18rem"}}>
@@ -14,22 +25,26 @@ const Phones = ({phones}) => {
   <img class="card-img-top" src={e.ImageUrl} alt="Card image cap"/>
   <div class="card-body">
     <h5 class="card-title">{e.Product}</h5>
+    <h5 class="card-title">{e.Price} DT</h5>
+
     <p class="card-text"></p>
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">{e.Price}</li>
-    <li class="list-group-item">{e.User}</li>
-    
-  </ul>
+
   <div class="card-body">
-    <a href="#" class="card-link" >more details</a>
+    <a  onClick={()=>{
+      setCard(e)
+      togtog()}} class="card-link" >more details</a>
+
     
   </div><div>
   
   </div>
 </div>
   )})}
-  </div>)
+  </div>) 
+  
+}
+  
 
 }
 

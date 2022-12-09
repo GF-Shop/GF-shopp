@@ -53,9 +53,9 @@ const AddProduct = () => {
   return (
     <div className="MainDiv">
      
-        <div class="container main-container">
-          <div class="row">
-            <div class="col-lg-12">
+        <div className="container main-container">
+          <div >
+            <div className="col-lg-12">
               <b className="heading">ADD PRODUCT </b>
               
                 <div className="form-group">
@@ -72,8 +72,8 @@ const AddProduct = () => {
                 </div>
                 <div className="form-group">
                 <b htmlFor="image" >Product Image: </b>
-                <input  class="inputfile"  type="file"   onChange={(event)=>setFile(event.target.files[0])}  />
-                <button  className="btn btn-primary"   class="button-4 " onClick={
+                <input  className="inputfile"  type="file"   onChange={(event)=>setFile(event.target.files[0])}  />
+                <button  className="btn btn-primary button-4"   onClick={
                 uploadd} > <b> upload Img </b></button>
                 </div>
                 <div className="form-group">
@@ -93,10 +93,10 @@ const AddProduct = () => {
                 </div>
                 <div className="form-group">
                 <b htmlFor="comment">Product Description:</b>
-                <textarea class="form-control" rows="5" id="productdesc" useRef="productdesc" onChange={(event)=>setDescription(event.target.value)} placeholder="enter Description" ></textarea>
+                <textarea className="form-control" rows="5" id="productdesc" useRef="productdesc" onChange={(event)=>setDescription(event.target.value)} placeholder="enter Description" ></textarea>
                 </div>
                 
-                <button  class="button-77" role="button"  onClick={()=>{
+                <button  className="button-77" role="button"  onClick={()=>{
                 
                 
                   
