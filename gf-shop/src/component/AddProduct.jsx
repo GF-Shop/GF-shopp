@@ -9,7 +9,6 @@ import jwt_decode from 'jwt-decode'
 const AddProduct = () => {
 
 
-
   const [Product,setProduct]=useState("")
   
   const [Price,setPrice]=useState(0)
@@ -98,11 +97,12 @@ const AddProduct = () => {
                 </div>
                 
                 <button  className="button-77" role="button"  onClick={()=>{
-                
-                
+               
+                uploadd();
                   
-                   Add({User:jwt_decode(localStorage.getItem('token')).User,ImageUrl,Product,Price,Description,Category,Phonenumber})
-                   window.location.href = "/";
+                   Add({User:jwt_decode(localStorage.getItem('token')).User,ImageUrl,Product,Price,Description,Category,Phonenumber}) ;
+                  
+                   window.location.href = "/"
                   
                   }}> sumbit</button>
                  
