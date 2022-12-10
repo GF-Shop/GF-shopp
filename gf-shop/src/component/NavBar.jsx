@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav'
 import "./navbar.css"
 
 
-const NavBar = ({searchBar}) => {
+const NavBar = (props) => {
 
   const[fil,setFil]=useState("")
  
@@ -32,7 +32,7 @@ const NavBar = ({searchBar}) => {
 
                 <div className="form">
                   <input type="text" className="form-control form-input" placeholder="Search anything..." onChange={(e)=>{setFil(e.target.value)}}/>
-                  <i className="fa fa-search" onClick={()=>{searchBar(fil)}}> </i>
+                  <i className="fa fa-search" onClick={()=>{props.searchBar(fil)}}> </i>
 
                   
                 </div>
@@ -47,9 +47,13 @@ const NavBar = ({searchBar}) => {
 
         <Nav.Link href="/" title='home'  style={{fontSize:"35px",color:"white"}} ><img  src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,w_38/v1670510023/b11itd9covkktj30nnut.png"></img></Nav.Link>
 
+        <Nav.Link href="profile" title='help' style={{fontSize:"35px",color:"white"}} ><img src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,w_38/v1670624242/p45ezik5icqufpletfwm.png"></img></Nav.Link>
 
             <Nav.Link href="help" title='help' style={{fontSize:"35px",color:"white"}} ><img src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,w_38/v1670512244/th95h6nnv6j1jtrgljvy.png"></img></Nav.Link>
             <Nav.Link href="add" title='add product' style={{fontSize:"35px",color:"white"}}><img src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,w_38/v1670510017/yclxc3kkbe2gdrbllji0.png"></img></Nav.Link>
+            
+            <Nav.Link href="login" title='add product' style={{fontSize:"35px",color:"white"}} onClick={()=>Storage.clear()}><img src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,w_38/v1670624242/a3msn5btuh4wbbfwikir.png"></img></Nav.Link>
+            
       </Container>
     </Navbar>
   </>

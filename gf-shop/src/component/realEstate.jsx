@@ -1,10 +1,22 @@
 import React from 'react'
+import { useState, useEffect } from "react";
+import ProductCard from './ProductCard.jsx';
 
-const RealEstate = ({realEstate}) => 
-  {
+const RealEstate = (props) => 
+  {const[card,setCard]=useState('')
+ const [show,setShow]=useState(false)
+const togtog=()=>{
+let she=!show
+setShow(she)
+}
+
+  if (show===true) {
+    return <ProductCard togtog={togtog} card={card} />
+  }
+  else {
 
     return (<div class="grid-container ">
-      {realEstate.map((e,i)=>{
+      {props.realEstate.map((e,i)=>{
          return(
           
       <div class="card grid-item" style={{width: "18rem"}}>
@@ -20,7 +32,9 @@ const RealEstate = ({realEstate}) =>
       
     </ul>
     <div class="card-body">
-      <a href="#" class="card-link" >more details</a>
+      <a onClick={()=>{
+      setCard(e)
+      togtog()}} class="card-link" >more details</a>
       
     </div><div>
     
@@ -30,5 +44,5 @@ const RealEstate = ({realEstate}) =>
     </div>)
   
   }
-
+}
 export default RealEstate

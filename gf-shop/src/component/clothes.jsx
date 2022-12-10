@@ -1,7 +1,18 @@
 import React from 'react'
-
+import { useState, useEffect } from "react";
+import ProductCard from './ProductCard.jsx';
 const Clothes = ({clothes}) =>  {
+const[card,setCard]=useState('')
+ const [show,setShow]=useState(false)
+const togtog=()=>{
+let she=!show
+setShow(she)
+}
 
+  if (show===true) {
+    return <ProductCard togtog={togtog} card={card} />
+  }
+  else {
   return (<div class="grid-container ">
     {clothes.map((e,i)=>{
        return(
@@ -19,7 +30,9 @@ const Clothes = ({clothes}) =>  {
     
   </ul>
   <div class="card-body">
-    <a href="#" class="card-link" >more details</a>
+    <a onClick={()=>{
+      setCard(e)
+      togtog()}} class="card-link" >more details</a>
     
   </div><div>
   
@@ -28,7 +41,7 @@ const Clothes = ({clothes}) =>  {
   )})}
   </div>)
 
-}
+}}
 
 
 export default Clothes

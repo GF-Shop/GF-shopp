@@ -1,7 +1,7 @@
 import React from 'react'
 import "./home.css"
 const Home = ({data}) => {
-    console.log(('hello',data));
+    // console.log(('hello',data));
   return (
     <div className='MainDiv'>
         
@@ -33,7 +33,7 @@ const Home = ({data}) => {
 
 
         <div className="box" onClick={() => {
-                            console.log("cliked");
+                            // console.log("cliked");
                             window.location.href = "/phones";
                           }} > 
         
@@ -55,7 +55,7 @@ const Home = ({data}) => {
         </div>
 
         <div className="box" onClick={() => {
-                            console.log("cliked");
+                            // console.log("cliked");
                             window.location.href = "/vehicle";
                           }}>
             <div className="image">
@@ -76,7 +76,7 @@ const Home = ({data}) => {
         </div>
  
         <div className="box" onClick={() => {
-                            console.log("cliked");
+                            // console.log("cliked");
                             window.location.href = "/clothes";
                           }}>
             <div className="image">
@@ -97,7 +97,7 @@ const Home = ({data}) => {
         </div>
 
         <div className="box" onClick={() => {
-                            console.log("cliked");
+                            // console.log("cliked");
                             window.location.href = "/realEstate";
                           }}>
             <div className="image">
