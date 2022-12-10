@@ -1,7 +1,19 @@
+import { useState } from "react"
 import React from 'react'
+import ProductCard from './ProductCard.jsx';
 
 const Vehicle = ({vehicle}) =>  {
-
+  console.log(vehicle);
+  const[card,setCard]=useState('')
+  const [show,setShow]=useState(false)
+  const togtog=()=>{
+    let she=!show
+    setShow(she)
+    }
+    if (show===true) {
+      return <ProductCard togtog={togtog} card={card} />
+    }
+    else {
   return (<div class="grid-container ">
     {vehicle.map((e,i)=>{
        return(
@@ -19,7 +31,9 @@ const Vehicle = ({vehicle}) =>  {
     
   </ul>
   <div class="card-body">
-    <a href="#" class="card-link" >more details</a>
+    <a onClick={()=>{
+      setCard(e)
+      togtog()}} class="card-link"  >more details</a>
     
   </div><div>
   
@@ -28,6 +42,6 @@ const Vehicle = ({vehicle}) =>  {
   )})}
   </div>)
 
-}
+}}
 
 export default Vehicle

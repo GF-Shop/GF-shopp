@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import axios from 'axios'
 import "./Add.css"
+import jwt_decode from 'jwt-decode'
 
 
 
@@ -100,7 +101,7 @@ const AddProduct = () => {
                 
                 
                   
-                   Add({ImageUrl,Product,Price,Description,Category,Phonenumber})
+                   Add({User:jwt_decode(localStorage.getItem('token')).User,ImageUrl,Product,Price,Description,Category,Phonenumber})
                    window.location.href = "/";
                   
                   }}> sumbit</button>

@@ -4,9 +4,11 @@ import axios from "axios";
 const Login = () => {
   const [username, setUsername] = useState("");
   const [result, setResult] = useState("");
-
+const[count,setCount]=useState(0)
   const [password, setPassword] = useState("");
   console.log(result);
+  console.log(count);
+
   //a function to handle the changes of the input
   const handleChanges = (e, cb) => {
     cb(e.target.value);
@@ -91,7 +93,8 @@ const Login = () => {
                       <div className="text-center pt-1 mb-5 pb-1">
                         <button
                         onClick={()=>{
-                          Login({User:username,password})
+                          Login({User:username,password});
+                          count===1?window.location.href="/":setCount(count+1)
                         }}
                           className="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
                           type="button"

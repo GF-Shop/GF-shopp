@@ -7,7 +7,6 @@ const SignUp = () => {
   const [password, setPassword] = useState("");
   const [passwordagain, setPasswordagain] = useState("");
 
-
   //a function to handle the changes of the input
   const handleChanges=(e,cb)=>{
 cb(e.target.value)
@@ -121,9 +120,10 @@ axios.post("http://localhost:5000/prod/user/signup",body).then((res)=>{
 
                     <div className="d-flex justify-content-center">
                       <button
-                      onClick={()=>{SignUp({User:username,Phonenumber:phone,password,passwordagain})}}
+                      onClick={()=>{SignUp({User:username,Phonenumber:phone,password,passwordagain}) }}
                         type="button"
                         className="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
+                        
                       >
                         Register
                       </button>

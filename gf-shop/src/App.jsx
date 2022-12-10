@@ -16,63 +16,74 @@ import axios from "axios";
 import Vehicle from "./component/Vehicle.jsx";
 import { Routes, Route } from "react-router-dom";
 import jwt_decode from 'jwt-decode'
-import ProductCard from "./component/ProductCard";
+import ProductCard from "./component/ProductCard.jsx";
+import Profile from "./component/profile.jsx";
 
 function App() {
   const [data, setData] = useState([]);
   const [filtred, setFiltred] = useState([]);
-const [userLoggedIn,setUser]=useState('')
+const [userLoggedIn,setUser]=useState({})
   const [phones, setPhones] = useState([]);
   const [clothes, setClothes] = useState([]);
   const [realEstate, setRealEstate] = useState([]);
   const [vehicle, setVehicle] = useState([]);
   const [card,setCard]=useState('')
- console.log(userLoggedIn,'hi');
+  const [profile,setProfile]=useState([])
+  const [username,setUsername]=useState([])
+
+
+
   const ChangeCard=async(optin)=>{
-    console.log(optin);
+ 
 await setCard(optin)
   }
-  console.log(data);
-  console.log(filtred);
+
+  
   useEffect(() => {
 const token=localStorage.getItem('token')
-console.log(token,'token');
+// console.log(token);
 if(token){
-  const username=jwt_decode(token)
-  console.log(username,'user')
+  setUsername(jwt_decode(token))
+  
   if(!username){
     localStorage.removeItem('token')
   }
   else{
-    axios.get(`http://localhost:5000/prod/${username.User}`).then(res=>{
-      console.log(res.data,'res.dataata');
-setUser(res.data)
-    })
+    axios.get(`http://localhost:5000/prod/${username.User}`).then( (res)=>{
+     
+  setUser(res.data)
+    
+})
   }
 }
 
 
-    axios.get("http://localhost:5000/prod/prod").then(async (res) => {
-      await setData(res.data);
+    axios.get("http://localhost:5000/prod/prod").then( (res) => {
+       setData(res.data);
 
-      await setPhones(
+       setPhones(
         res.data.filter((element) => {
           return element.Category === "phone";
         })
       );
-      await setVehicle(
+       setVehicle(
         res.data.filter((element) => {
           return element.Category === "vehicle";
         })
       );
-      await setClothes(
+       setClothes(
         res.data.filter((element) => {
           return element.Category === "clothes";
         })
       );
-      await setRealEstate(
+       setRealEstate(
         res.data.filter((element) => {
           return element.Category === "real estate";
+        })
+      );
+       setProfile(
+        res.data.filter((element) => {
+          return element.User == jwt_decode(token).User
         })
       );
     });
@@ -81,7 +92,7 @@ setUser(res.data)
   const searchBar= (prod)=>{  
     setFiltred(data.filter((e)=>e.Product.includes(prod)))
   }
-
+console.log(profile ,data);
   return (
   
   
@@ -105,15 +116,16 @@ setUser(res.data)
         <Route>
           <Route path="" element={<Home filtred={filtred}/>} />
           <Route path="/phones" element={<Phones phones={phones} ChangeCard={ChangeCard} />} />
+         
 
           <Route path="/login" element={<Login />} />
           <Route path="/vehicle" element={<Vehicle vehicle={vehicle} />} />
           <Route path="/realEstate"element={<RealEstate realEstate={realEstate} />}/>
           <Route path="/clothes" element={<Clothes clothes={clothes} />} />
-          <Route path="/add" element={<AddProduct />} />
+          <Route path="/add" element={<AddProduct userLoggedIn={userLoggedIn}/>} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/help" element={<Help />} />
-
+ <Route path="/profile" element={<Profile profile={profile} user={userLoggedIn}  />} />
           <Route path="/productcard" element={<ProductCard card={card}/>} />
 
 
