@@ -1,11 +1,12 @@
 import React from 'react'
 import jwt_decode from 'jwt-decode'
+import Posts from "./posts.jsx"
+import './profile.css'
+import axios from 'axios'
+const Profile = (props) => {
 
-const profile = (props) => {
- 
   return (
     <>  <section>
-      {console.log(jwt_decode(localStorage.getItem('token')).User)}
   <div className="container mt-4 mb-4 p-3 d-flex justify-content-center">
     {" "}
     <div className="card p-4">
@@ -39,24 +40,7 @@ const profile = (props) => {
 
        return(
         
-    <div key={i} className="card grid-item" style={{width: "18rem"}}>
-      
-  <img className="card-img-top" src={e.ImageUrl} alt="Card image cap"/>
-  <div className="card-body">
-    <h5 className="card-title">{e.Product}</h5>
-    <h5 className="card-title">{e.Price} DT</h5>
-
-    <p className="card-text"></p>
-  </div>
-
-  <div className="card-body">
-   
-
-    
-  </div><div>
-  
-  </div>
-</div>
+        <Posts e={e} key={i}/>
   )})}
   </div>
   </section>
@@ -65,4 +49,4 @@ const profile = (props) => {
   )
 }
 
-export default profile
+export default Profile

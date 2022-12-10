@@ -31,7 +31,7 @@ const [userLoggedIn,setUser]=useState({})
   const [profile,setProfile]=useState([])
   const [username,setUsername]=useState([])
 
-
+console.log(profile);
 
   const ChangeCard=async(optin)=>{
  
@@ -92,7 +92,7 @@ if(token){
   const searchBar= (prod)=>{  
     setFiltred(data.filter((e)=>e.Product.includes(prod)))
   }
-console.log(profile ,data);
+// console.log(profile ,data);
   return (
   
   
