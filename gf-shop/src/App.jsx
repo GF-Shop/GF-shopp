@@ -106,7 +106,7 @@ console.log(profile ,data);
     <div className="App"  >
       <body className="main" style={{ 
 
-    backgroundImage: `url("https://img.freepik.com/photos-premium/arriere-plan-flou-noir-blanc-flou-bureau-fond-clair-bokeh_7190-2287.jpg?w=2000")` 
+    backgroundImage: `url("https://st3.depositphotos.com/2101611/15493/i/600/depositphotos_154935546-stock-photo-white-blur-abstract-background.jpg")` 
 
   }}>
   <NavBar searchBar={searchBar} />
