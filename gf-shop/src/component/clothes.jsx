@@ -10,7 +10,7 @@ setShow(she)
 }
 
   if (show===true) {
-    return <ProductCard togtog={togtog} card={card} />
+    return <ProductCard  card={card} />
   }
   else {
   return (<div class="grid-container ">
