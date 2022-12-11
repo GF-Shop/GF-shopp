@@ -51,7 +51,7 @@ section {
 
 .heading span {
   font-size: larger;
-  color: #198754;
+  color: #000000;
 }
 
 .btn {
@@ -1285,4 +1285,11 @@ section {
   .shopping-cart .cart-total .btn {
     width: 100%;
   }
+}
+
+.publicité {
+  width: 970px;
+  height: 250px;
+  background-image:url("https://a1.awin1.com/ads/awin/7302/img970x250-1669886584610.gif")
+  
 }

@@ -23,8 +23,8 @@ if (show===true) {
     <img className="card-img-top " src={e.ImageUrl} alt="Card image cap"/>
 
     <div className="card-body">
-      <h5 className="card-title">{props.e.Product}</h5>
-      <h5 className="card-title">{props.e.Price} DT</h5>
+      <h5 className="card-title">{e.Product}</h5>
+      <h5 className="card-title">{e.Price} DT</h5>
      
 
     <button id='update' onClick={()=>{togtog() ; setCard(e);}}  >update</button>
@@ -32,7 +32,7 @@ if (show===true) {
 
     <button id='delete' onClick={()=>{console.log("hello");
       
-      axios.delete(`http://localhost:5000/prod/63948c4c25963a27f1aeddef`)
+      axios.delete(`http://localhost:5000/prod/${e._id}f`)
       
 
 }

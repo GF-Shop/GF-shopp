@@ -1,6 +1,6 @@
 import React from 'react'
 import jwt_decode from 'jwt-decode'
-import Posts from "./posts.jsx"
+import Posts from "./Posts.jsx"
 import './profile.css'
 import axios from 'axios'
 const Profile = (props) => {
