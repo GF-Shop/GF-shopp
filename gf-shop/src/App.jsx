@@ -17,7 +17,7 @@ import Vehicle from "./component/Vehicle.jsx";
 import { Routes, Route } from "react-router-dom";
 import jwt_decode from 'jwt-decode'
 import ProductCard from "./component/ProductCard.jsx";
-import Profile from "./component/profile.jsx";
+import Profile from "./component/Profile.jsx";
 
 function App() {
   const [data, setData] = useState([]);
@@ -35,7 +35,7 @@ console.log(profile);
 
   const ChangeCard=async(optin)=>{
  
-await setCard(optin)
+ await setCard(optin)
   }
 
   
