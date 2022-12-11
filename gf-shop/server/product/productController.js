@@ -76,7 +76,7 @@ exports.retrieveOne = function (req, res) {
 };
 
 exports.updateOne = function (req, res) {
-  Product.findOneAndUpdate({ id: req.params.id }, req.body)
+  Product.findOneAndUpdate({ _id: req.params.id }, req.body)
     .then((result) => {
       res.send(result);
     })
