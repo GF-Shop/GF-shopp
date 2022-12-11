@@ -1,6 +1,8 @@
 import React from 'react'
 import "./home.css"
-const Home = ({data}) => {
+const Home = ({filtred}) => {
+    
+
   return (
     <div className='MainDiv'>
         

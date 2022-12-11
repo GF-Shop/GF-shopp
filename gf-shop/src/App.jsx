@@ -32,7 +32,7 @@ const [userLoggedIn,setUser]=useState({})
   const [profile,setProfile]=useState([])
   const [username,setUsername]=useState([])
   const [show,setShow]=useState(false)
-console.log(show);
+console.log(filtred);
 
 
   const ChangeCard=async(optin)=>{
@@ -93,8 +93,9 @@ if(token){
 
   const searchBar= (prod)=>{  
     setFiltred(data.filter((e)=>e.Product.includes(prod)))
+    
   }
-// console.log(profile ,data);
+
 
 
   return (
@@ -112,7 +113,8 @@ if(token){
 
       <Routes>
         <Route>
-          <Route path="/home" element={<Home filtred={filtred}/>} />
+          <Route path="/home" element={<Home filtred={filtred}/> } />
+
           <Route path="/phones" element={<Phones phones={phones} ChangeCard={ChangeCard} />} />
          
 
