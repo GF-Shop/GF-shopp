@@ -23,12 +23,12 @@ const Help = () => {
 
       <h2>Our Team</h2>
       <div className="">
-        <div className="column"  style={{ width: "100%" }}>
-          <div className="card">
+        <div className="column"  style={{ width: "33%"  }}>
+          <div className="card" >
             <img
-              src="/w3images/team1.jpg"
+              src="https://res.cloudinary.com/duqxezt6m/image/upload/v1670418836/IMG_0166_wewvtd.jpg"
               alt=""
-              style={{ width: "100%" }}
+              style={{ width: "100%" , height:"70%" }}
             />
             <div className="container">
               <h2>Walid Slim</h2>
@@ -40,9 +40,9 @@ const Help = () => {
           </div>
         </div>
 
-        <div className="column"  style={{ width: "100%" }}>
+        <div className="column"  style={{ width: "33%" }}>
           <div className="card">
-            <img src="" alt="" style={{ width: "100%" }} />
+            <img src="https://res.cloudinary.com/duqxezt6m/image/upload/v1670418835/IMG_0168_jjtbyu.jpg" alt="" style={{ width: "100%" }} />
             <div className="container">
               <h2>Aziz Selini</h2>
               <p className="title">Art Director</p>
@@ -53,10 +53,10 @@ const Help = () => {
           </div>
         </div>
 
-        <div className="column"  style={{ width: "100%" }}>
+        <div className="column"  style={{ width: "33%" }}>
           <div className="card">
             <img
-              src="/w3images/team3.jpg"
+              src="https://res.cloudinary.com/duqxezt6m/image/upload/v1670418835/IMG_0167_lyaqbp.jpg"
               alt=""
               style={{ width: "100%" }}
             />

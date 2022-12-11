@@ -25,24 +25,24 @@ body {
   }
   
   .about-section {
-    padding: 100px;
+    padding: 50px;
     text-align: center;
     background-color: #198754;
     color: white;
   }
   
   .container {
-    padding: 0 16px;
+    padding: 16px;
   }
   
   .container::after, .row::after {
     content: "";
     clear: both;
-    display: table;
+    display: flex;
   }
   
   .title {
-    color: grey;
+    color: #198754;
   }
   
 
@@ -54,6 +54,6 @@ body {
   @media screen and (max-width: 650px) {
     .column {
       width: 100%;
-      display: table-column;
+      display: table;
     }
   }

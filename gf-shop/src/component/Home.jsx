@@ -121,6 +121,13 @@ const Home = ({data}) => {
 </div>
 
 </section>
+<section>
+    <center>
+    <div className='publicité' onClick={()=>window.open("https://www.orange.tn/",'_Blank')}>
+
+    </div>
+    </center>
+</section>
 </div>
 </div>
   )
