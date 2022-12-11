@@ -6,6 +6,8 @@ const SignUp = () => {
   const [phone,setPhone]=useState('')
   const [password, setPassword] = useState("");
   const [passwordagain, setPasswordagain] = useState("");
+  const[count,setCount]=useState(0)
+  
 
   //a function to handle the changes of the input
   const handleChanges=(e,cb)=>{
@@ -57,6 +59,8 @@ axios.post("http://localhost:5000/prod/user/signup",body).then((res)=>{
                         className="form-control form-control-lg"
                       />
                     </div>
+     
+
 
                     <div className="form-outline mb-4">
                       <label className="form-label" htmlFor="form3Example3cg">
@@ -120,7 +124,7 @@ axios.post("http://localhost:5000/prod/user/signup",body).then((res)=>{
 
                     <div className="d-flex justify-content-center">
                       <button
-                      onClick={()=>{SignUp({User:username,Phonenumber:phone,password,passwordagain}) }}
+                      onClick={()=>{SignUp({User:username,Phonenumber:phone,password,passwordagain});count===1?window.location.href="/":setCount(count+1)}}
                         type="button"
                         className="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
                         

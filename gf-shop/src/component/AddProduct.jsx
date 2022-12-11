@@ -102,7 +102,7 @@ const AddProduct = () => {
                   
                    Add({User:jwt_decode(localStorage.getItem('token')).User,ImageUrl,Product,Price,Description,Category,Phonenumber}) ;
                   
-                   window.location.href = "/"
+                   window.location.href = "/home"
                   
                   }}> sumbit</button>
                  
