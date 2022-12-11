@@ -67,7 +67,7 @@ exports.retrieveOneUser = function (req, res) {
 };
 
 exports.retrieveOne = function (req, res) {
-  Product.findOne({ id: req.params.id }, (err, Res) => {
+  Product.findOne({ _id: req.params.id }, (err, Res) => {
     if (err) console.log(err);
     else {
       res.json(Res);
@@ -84,7 +84,7 @@ exports.updateOne = function (req, res) {
     .catch((err) => console.log(err));
 };
 exports.deleteOne = function (req, res) {
-  Product.deleteOne({ id: req.params.id })
+  Product.deleteOne({ _id: req.params.id })
     .then((result) => {
       res.send(result);
     })

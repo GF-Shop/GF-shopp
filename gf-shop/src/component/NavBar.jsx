@@ -52,7 +52,10 @@ const NavBar = (props) => {
             <Nav.Link href="help" title='profile' style={{fontSize:"35px",color:"white"}} ><img src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,w_38/v1670512244/th95h6nnv6j1jtrgljvy.png"></img></Nav.Link>
             <Nav.Link href="add" title='add product' style={{fontSize:"35px",color:"white"}}><img src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,w_38/v1670510017/yclxc3kkbe2gdrbllji0.png"></img></Nav.Link>
             
-            <Nav.Link href="login" title='logout' style={{fontSize:"35px",color:"white"}} onClick={()=>Storage.clear()}><img src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,w_38/v1670624242/a3msn5btuh4wbbfwikir.png"></img></Nav.Link>
+
+            <Nav.Link href="login" title='add product' style={{fontSize:"35px",color:"white"}} onClick={()=>{window.localStorage.clear()
+            }}><img src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,w_38/v1670624242/a3msn5btuh4wbbfwikir.png"></img></Nav.Link>
+
             
       </Container>
     </Navbar>
