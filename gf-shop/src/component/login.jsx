@@ -94,7 +94,7 @@ const[count,setCount]=useState(0)
                         <button
                         onClick={()=>{
                           Login({User:username,password});
-                          count===1?window.location.href="/":setCount(count+1)
+                          count===1?window.location.href="/home":setCount(count+1)
                         }}
                           className="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
                           type="button"

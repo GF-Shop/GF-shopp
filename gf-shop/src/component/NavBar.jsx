@@ -32,7 +32,7 @@ const NavBar = (props) => {
 
                 <div className="form">
                   <input type="text" className="form-control form-input" placeholder="Search anything..." onChange={(e)=>{setFil(e.target.value)}}/>
-                  <i className="fa fa-search" onClick={()=>{props.searchBar(fil)}}> </i>
+                  <i className="fa fa-search" onClick={()=>{props.searchBar(fil) }}> </i>
 
                   
                 </div>
@@ -45,7 +45,7 @@ const NavBar = (props) => {
       </Container>
       <Container>
 
-        <Nav.Link href="/" title='home'  style={{fontSize:"35px",color:"white"}} ><img  src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,w_38/v1670510023/b11itd9covkktj30nnut.png"></img></Nav.Link>
+        <Nav.Link href="/home" title='home'  style={{fontSize:"35px",color:"white"}} ><img  src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,w_38/v1670510023/b11itd9covkktj30nnut.png"></img></Nav.Link>
 
         <Nav.Link href="profile" title='help' style={{fontSize:"35px",color:"white"}} ><img src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,w_38/v1670624242/p45ezik5icqufpletfwm.png"></img></Nav.Link>
 
@@ -53,7 +53,7 @@ const NavBar = (props) => {
             <Nav.Link href="add" title='add product' style={{fontSize:"35px",color:"white"}}><img src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,w_38/v1670510017/yclxc3kkbe2gdrbllji0.png"></img></Nav.Link>
             
 
-            <Nav.Link href="login" title='add product' style={{fontSize:"35px",color:"white"}} onClick={()=>{window.localStorage.clear()
+            <Nav.Link href="/" title='add product' style={{fontSize:"35px",color:"white"}} onClick={()=>{window.localStorage.clear()
             }}><img src="https://res.cloudinary.com/drd0uckic/image/upload/c_scale,w_38/v1670624242/a3msn5btuh4wbbfwikir.png"></img></Nav.Link>
 
             
