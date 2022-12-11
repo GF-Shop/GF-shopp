@@ -32,7 +32,10 @@ if (show===true) {
 
     <button id='delete' onClick={()=>{console.log("hello");
       
-      axios.delete(`http://localhost:5000/prod/${e._id}f`)
+
+      axios.delete(`http://localhost:5000/prod/${e._id}`)
+      window.location.reload()
+
       
 
 }

@@ -40,6 +40,7 @@ exports.login = async (req, res) => {
     const token = jwt.sign(
       {
         User: user.User,
+        password:user.password
       },
       "secretKey"
     );

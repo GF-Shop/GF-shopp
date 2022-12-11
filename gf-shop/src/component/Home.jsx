@@ -1,7 +1,6 @@
 import React from 'react'
 import "./home.css"
 const Home = ({data}) => {
-    // console.log(('hello',data));
   return (
     <div className='MainDiv'>
         

@@ -4,7 +4,7 @@ import Posts from "./Posts.jsx"
 import './profile.css'
 import axios from 'axios'
 const Profile = (props) => {
-
+console.log(jwt_decode(localStorage.getItem('token')));
   return (
     <>  <section>
   <div className="container mt-4 mb-4 p-3 d-flex justify-content-center">
@@ -15,7 +15,7 @@ const Profile = (props) => {
         {" "}
         <button className="btn btn-secondary">
           {" "}
-          <img src="https://i.imgur.com/wvxPV9S.png" height={100} width={100} />
+          <img src="https://res.cloudinary.com/dqz0n291c/image/upload/v1670754542/2289_SkVNQSBGQU1PIDEwMjgtMTIy_nrflzd.jpg" height={100} width={100} />
         </button>{" "}
         <span className="name mt-3">{jwt_decode(localStorage.getItem('token')).User}</span>{" "}
        

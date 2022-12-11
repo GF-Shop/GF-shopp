@@ -17,7 +17,7 @@ import Vehicle from "./component/Vehicle.jsx";
 import { Routes, Route } from "react-router-dom";
 import jwt_decode from 'jwt-decode'
 import ProductCard from "./component/ProductCard.jsx";
-import Profile from "./component/Profile.jsx";
+import Profile from "./component/profile.jsx";
 import Update from "./component/Update";
 
 function App() {
@@ -31,8 +31,9 @@ const [userLoggedIn,setUser]=useState({})
   const [card,setCard]=useState('')
   const [profile,setProfile]=useState([])
   const [username,setUsername]=useState([])
+  const [show,setShow]=useState(false)
+console.log(show);
 
-console.log(profile);
 
   const ChangeCard=async(optin)=>{
  
@@ -94,14 +95,10 @@ if(token){
     setFiltred(data.filter((e)=>e.Product.includes(prod)))
   }
 // console.log(profile ,data);
+
+
   return (
   
-  
-    
-  
-
-    
-      
       
 
     <div className="App"  >
@@ -110,16 +107,16 @@ if(token){
     backgroundImage: `url("https://st3.depositphotos.com/2101611/15493/i/600/depositphotos_154935546-stock-photo-white-blur-abstract-background.jpg")` 
 
   }}>
-  <NavBar searchBar={searchBar} />
+  <NavBar searchBar={searchBar}  />
      
 
       <Routes>
         <Route>
-          <Route path="" element={<Home filtred={filtred}/>} />
+          <Route path="/home" element={<Home filtred={filtred}/>} />
           <Route path="/phones" element={<Phones phones={phones} ChangeCard={ChangeCard} />} />
          
 
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="/vehicle" element={<Vehicle vehicle={vehicle} />} />
           <Route path="/realEstate"element={<RealEstate realEstate={realEstate} />}/>
           <Route path="/clothes" element={<Clothes clothes={clothes} />} />
