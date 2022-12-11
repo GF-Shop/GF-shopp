@@ -1,19 +1,40 @@
-import React from 'react'
+import React,{useState} from 'react'
 import axios from 'axios'
-const Posts = (props) => {
+
+import Update from "./Update.jsx"
+
+const Posts = ({e}) => {
+  const[card,setCard]=useState('')
+  const [show,setShow]=useState(false)
+  
+const togtog=()=>{
+let she=!show
+setShow(she)
+}
+if (show===true) {
+    return <Update   card={card} />
+  }
+  else {
+
   return (
-    <div  className="card grid-item" style={{width: "18rem"}}>
+    <div  className="card grid-item h-100 d-flex align-items-center justify-content-center " style={{width: "18rem"}}>
       
-    <img className="card-img-top" src={props.e.ImageUrl} alt="Card image cap"/>
+
+    <img className="card-img-top " src={e.ImageUrl} alt="Card image cap"/>
+
     <div className="card-body">
       <h5 className="card-title">{props.e.Product}</h5>
       <h5 className="card-title">{props.e.Price} DT</h5>
      
-    <button id='update'>update</button>
-    <button id='delete' onClick={()=>{console.log(props.e._id)
+
+    <button id='update' onClick={()=>{togtog() ; setCard(e);}}  >update</button>
+
+
+    <button id='delete' onClick={()=>{console.log("hello");
       
-      axios.delete(`http://localhost:5000/prod/${props.e._id}`)
-      window.location.reload()
+      axios.delete(`http://localhost:5000/prod/63948c4c25963a27f1aeddef`)
+      
+
 }
 }
     >delete</button>
@@ -31,6 +52,6 @@ const Posts = (props) => {
     </div>
   </div>
   )
-}
+}}
 
 export default Posts

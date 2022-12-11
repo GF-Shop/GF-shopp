@@ -18,6 +18,7 @@ import { Routes, Route } from "react-router-dom";
 import jwt_decode from 'jwt-decode'
 import ProductCard from "./component/ProductCard.jsx";
 import Profile from "./component/Profile.jsx";
+import Update from "./component/Update";
 
 function App() {
   const [data, setData] = useState([]);
@@ -125,9 +126,9 @@ if(token){
           <Route path="/add" element={<AddProduct userLoggedIn={userLoggedIn}/>} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/help" element={<Help />} />
- <Route path="/profile" element={<Profile profile={profile} user={userLoggedIn}  />} />
+          <Route path="/profile" element={<Profile profile={profile} user={userLoggedIn}  />} />
           <Route path="/productcard" element={<ProductCard card={card}/>} />
-
+          
 
         </Route>
       </Routes>
