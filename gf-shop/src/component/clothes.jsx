@@ -4,7 +4,7 @@ import ProductCard from './ProductCard.jsx';
 const Clothes = ({clothes}) =>  {
 const[card,setCard]=useState('')
  const [show,setShow]=useState(false)
-const togtog=()=>{
+const toggle=()=>{
 let she=!show
 setShow(she)
 }
@@ -32,7 +32,7 @@ setShow(she)
   <div class="card-body">
     <a onClick={()=>{
       setCard(e)
-      togtog()}} class="card-link" >more details</a>
+      toggle()}} class="card-link" >more details</a>
     
   </div><div>
   

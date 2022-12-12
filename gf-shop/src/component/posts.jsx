@@ -7,7 +7,7 @@ const Posts = ({e}) => {
   const[card,setCard]=useState('')
   const [show,setShow]=useState(false)
   
-const togtog=()=>{
+const toggle=()=>{
 let she=!show
 setShow(she)
 }
@@ -27,7 +27,7 @@ if (show===true) {
       <h5 className="card-title">{e.Price} DT</h5>
      
 
-    <button id='update' onClick={()=>{togtog() ; setCard(e);}}  >update</button>
+    <button id='update' onClick={()=>{toggle() ; setCard(e);}}  >update</button>
 
 
     <button id='delete' onClick={()=>{console.log("hello");

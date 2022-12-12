@@ -6,12 +6,12 @@ const Vehicle = ({vehicle}) =>  {
   console.log(vehicle);
   const[card,setCard]=useState('')
   const [show,setShow]=useState(false)
-  const togtog=()=>{
+  const toggle=()=>{
     let she=!show
     setShow(she)
     }
     if (show===true) {
-      return <ProductCard togtog={togtog} card={card} />
+      return <ProductCard toggle={toggle} card={card} />
     }
     else {
   return (<div class="grid-container ">
@@ -33,7 +33,7 @@ const Vehicle = ({vehicle}) =>  {
   <div class="card-body">
     <a onClick={()=>{
       setCard(e)
-      togtog()}} class="card-link"  >more details</a>
+      toggle()}} class="card-link"  >more details</a>
     
   </div><div>
   
