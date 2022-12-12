@@ -22,7 +22,7 @@ console.log(card);
   <div className="card">
   <img src={card.ImageUrl} alt="Denim Jeans" style={{width:"100%"}}/>
   <h1>{card.Product}</h1>
-  <p className="price">{card.Price}</p>
+  <p className="price">{card.Price} DT </p>
   <p>{card.Description}</p>
   <p><button onClick={handleClick} >📞 contact seller</button></p>
   {isShown && (

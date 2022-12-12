@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
 import "./navbar.css"
-import Searchh from './Searchh';
+
 
 
 const NavBar = (props) => {
@@ -33,7 +33,9 @@ const NavBar = (props) => {
 
                 <div className="form">
                   <input type="text" className="form-control form-input" placeholder="Search anything..." onChange={(e)=>{setFil(e.target.value)}}/>
-                  <bu className="fa fa-search" onClick={()=>{props.searchBar(fil) }}> </bu>
+                  <button className="fa fa-search" onClick={()=>{
+                    props.toggle()
+                    props.searchBar(fil) }}> </button>
 
                   
                 </div>
